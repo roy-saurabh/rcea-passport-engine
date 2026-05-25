@@ -1,5 +1,10 @@
 # RCEA Passport Engine
 
+[![Tests](https://github.com/roy-saurabh/rcea-passport-engine/actions/workflows/tests.yml/badge.svg)](https://github.com/roy-saurabh/rcea-passport-engine/actions/workflows/tests.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20384670.svg)](https://doi.org/10.5281/zenodo.20384670)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/downloads/)
+
 **Manuscript:** Role-Conditioned Evidentiary Adequacy for AI Governance: A Computable Framework, Evidence Passport Architecture, and Reference Implementation.
 
 > **WARNING:** This is a research reference implementation using synthetic data only. It is **not** a legal compliance certification engine and does not constitute legal advice. RCEA scores are not legal determinations of regulatory compliance.
@@ -62,6 +67,21 @@ Run all tests:
 
 ```bash
 pytest tests/ -v
+```
+
+---
+
+## Full Reproduction
+
+To reproduce all paper tables, figures, and example passports from scratch:
+
+```bash
+git clone https://github.com/roy-saurabh/rcea-passport-engine.git
+cd rcea-passport-engine
+pip install -e ".[dev,notebooks]"
+pytest tests/ -v
+python scripts/reproduce_paper_tables.py
+python scripts/reproduce_paper_figures.py
 ```
 
 ---
@@ -181,8 +201,8 @@ If you use this software or the RCEA framework, please cite:
 ```bibtex
 @software{rcea_passport_engine,
   title  = {RCEA Passport Engine: Role-Conditioned Evidentiary Adequacy Reference Implementation},
-  author = {RCEA Research Team},
-  year   = {2025},
+  author = {Saurabh, Roy},
+  year   = {2026},
   doi    = {10.5281/zenodo.20384670},
   url    = {https://github.com/roy-saurabh/rcea-passport-engine}
 }

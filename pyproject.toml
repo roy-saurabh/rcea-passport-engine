@@ -4,13 +4,13 @@ build-backend = "hatchling.build"
 
 [project]
 name = "rcea-passport-engine"
-version = "0.1.0"
+version = "0.1.1"
 description = "Role-Conditioned Evidentiary Adequacy (RCEA): a computable framework and evidence passport reference implementation"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { file = "LICENSE" }
 authors = [
-    { name = "RCEA Research Team" },
+    { name = "Roy Saurabh", email = "royz.saurabh@gmail.com" },
 ]
 keywords = ["AI governance", "evidence passport", "auditability", "RCEA", "accountability"]
 classifiers = [
