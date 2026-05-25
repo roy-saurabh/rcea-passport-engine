@@ -111,6 +111,8 @@ def build_suppression_log(
 def propagate_limitations(finding: EvidenceFinding, rule: Rule) -> list[str]:
     if rule.limitation_propagation_required:
         return list(finding.limitations)
+    if rule.limitation_notice is not None:
+        return [rule.limitation_notice]
     return []
 
 
@@ -230,7 +232,7 @@ def _compute_scores(
         rule.traceability_requirement,
         finding_field_names,
     )
-    lp = compute_limitation_propagation(finding.limitations, propagated_limitations)
+    lp = compute_limitation_propagation(finding.limitations, propagated_limitations, rule.limitation_notice)
     at = compute_audit_traceability(claims)
 
     return {

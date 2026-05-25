@@ -13,3 +13,4 @@ env/
 *.egg
 .coverage
 htmlcov/
+paper_txt/

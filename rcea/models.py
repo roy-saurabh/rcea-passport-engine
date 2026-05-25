@@ -115,6 +115,7 @@ class Rule(BaseModel):
     action_label: str
     action_rationale_template: str
     limitation_propagation_required: bool
+    limitation_notice: Optional[str] = None
     regulatory_reference_required: bool
     traceability_requirement: list[str]
     suppression_rationale: dict[str, str]

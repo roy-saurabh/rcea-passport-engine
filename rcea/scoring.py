@@ -91,12 +91,16 @@ def compute_decision_actionability(
 def compute_limitation_propagation(
     material_limitations: list[str],
     propagated_limitations: list[str],
+    limitation_notice: Optional[str] = None,
 ) -> Optional[float]:
-    """Fraction of material limitations propagated. None if material_limitations is empty."""
+    """Fraction of material limitations propagated. None if material_limitations is empty.
+    A limitation_notice counts as one partial credit even without verbatim match."""
     if not material_limitations:
         return None
     propagated = sum(1 for lim in material_limitations if lim in propagated_limitations)
-    return propagated / len(material_limitations)
+    if limitation_notice is not None:
+        propagated = max(propagated, 1)
+    return min(propagated, len(material_limitations)) / len(material_limitations)
 
 
 def compute_audit_traceability(claims: list[PassportClaim]) -> float:

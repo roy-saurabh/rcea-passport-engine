@@ -179,7 +179,7 @@ Role comparison (same finding):
   dpo         0.8725     suspend_processing
   ciso        0.9222     mandate_security_review
   ai_lead     0.9028     commission_audit
-  executive   0.8313     require_board_briefing
+  executive   0.8938     require_board_briefing
 ```
 
 ---
@@ -203,7 +203,7 @@ If you use this software or the RCEA framework, please cite:
   title  = {RCEA Passport Engine: Role-Conditioned Evidentiary Adequacy Reference Implementation},
   author  = {Saurabh, Roy},
   year    = {2026},
-  version = {0.1.0},
+  version = {0.1.1},
   doi     = {10.5281/zenodo.20384670},
   url     = {https://github.com/roy-saurabh/rcea-passport-engine}
 }

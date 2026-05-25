@@ -17,10 +17,13 @@ def test_dpo_propagates_all_limitations(privacy_example):
         assert lim in passport.limitations
 
 
-def test_executive_has_empty_limitations(privacy_example):
+def test_executive_has_limitation_notice(privacy_example):
     finding, context, roles, rule_pack = privacy_example
     passport = generate_passport(finding, roles["executive"], context, rule_pack)
-    assert passport.limitations == []
+    # Executive rule emits a limitation_notice (partial LP credit) instead of full propagation
+    assert len(passport.limitations) == 1
+    assert passport.limitations[0]  # non-empty notice string
+    assert passport.rcea_scores.get("limitation_propagation", 0.0) > 0.0
 
 
 def test_validate_limitation_propagation_passes_dpo(privacy_example):

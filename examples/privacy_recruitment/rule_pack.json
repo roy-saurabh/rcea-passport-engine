@@ -68,7 +68,7 @@
     },
     {
       "rule_id": "rule-priv-exec-001",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "role_id": "executive",
       "finding_family": "privacy",
       "severity_minimum": "high",
@@ -79,6 +79,7 @@
       "action_label": "require_board_briefing",
       "action_rationale_template": "A {severity} privacy finding has been identified in the {role} context. Recommended action: {action}.",
       "limitation_propagation_required": false,
+      "limitation_notice": "Material technical limitations apply to this finding; consult DPO and AI Lead for full details before final governance decision.",
       "regulatory_reference_required": false,
       "traceability_requirement": ["severity"],
       "suppression_rationale": {

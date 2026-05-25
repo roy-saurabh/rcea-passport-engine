@@ -6,8 +6,8 @@ authors:
   - family-names: Saurabh
     given-names: Roy
     orcid: "https://orcid.org/0000-0003-3439-7731"
-version: 0.1.0
-date-released: "2026-05-25"
+version: 0.1.1
+date-released: "2026-05-26"
 repository-code: "https://github.com/roy-saurabh/rcea-passport-engine"
 doi: "10.5281/zenodo.20384670"
 license: MIT

@@ -31,6 +31,7 @@
           "action_label": { "type": "string" },
           "action_rationale_template": { "type": "string" },
           "limitation_propagation_required": { "type": "boolean" },
+          "limitation_notice": { "type": ["string", "null"] },
           "regulatory_reference_required": { "type": "boolean" },
           "traceability_requirement": { "type": "array", "items": { "type": "string" } },
           "suppression_rationale": {

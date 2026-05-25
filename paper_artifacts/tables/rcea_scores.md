@@ -5,7 +5,7 @@
 | privacy_recruitment | dpo | 1.0000 | 0.6500 | 1.0000 | 0.5000 | 1.0000 | 1.0000 | 1.0000 | 0.8725 |
 | privacy_recruitment | ciso | 1.0000 | 0.6500 | N/A | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 0.9222 |
 | privacy_recruitment | ai_lead | 1.0000 | 0.6500 | N/A | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 0.9028 |
-| privacy_recruitment | executive | 1.0000 | 0.6500 | N/A | 1.0000 | 1.0000 | 0.0000 | 1.0000 | 0.8313 |
+| privacy_recruitment | executive | 1.0000 | 0.6500 | N/A | 1.0000 | 1.0000 | 0.5000 | 1.0000 | 0.8938 |
 | robustness_healthcare | ciso | 1.0000 | 0.6500 | N/A | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 0.9222 |
 | robustness_healthcare | ai_lead | 1.0000 | 0.6500 | N/A | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 0.9028 |
 | robustness_healthcare | executive | 1.0000 | 0.6500 | N/A | 1.0000 | 1.0000 | 0.0000 | 1.0000 | 0.8313 |

@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.1.1] — 2026-05-26
+
+### Changed
+
+- Executive rule `rule-priv-exec-001` now includes a `limitation_notice` field, emitting a high-level summary notice to the executive passport and raising LP from 0.00 to 0.50 (overall RCEA: 0.8313 → 0.8938 for the privacy/recruitment example)
+- `Rule` model gains optional `limitation_notice: str | None` field; `propagate_limitations` and `compute_limitation_propagation` updated accordingly
+- `schemas/rule_pack.schema.json` extended with optional `limitation_notice` property
+
+### Fixed
+
+- `paper_artifacts/tables/rcea_scores.csv` executive row for `privacy_recruitment` corrected to LP = 0.5000 / RCEA = 0.8937
+
 ## [0.1.0] — 2026-05-25
 
 ### Added
