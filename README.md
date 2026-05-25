@@ -201,10 +201,11 @@ If you use this software or the RCEA framework, please cite:
 ```bibtex
 @software{rcea_passport_engine,
   title  = {RCEA Passport Engine: Role-Conditioned Evidentiary Adequacy Reference Implementation},
-  author = {Saurabh, Roy},
-  year   = {2026},
-  doi    = {10.5281/zenodo.20384670},
-  url    = {https://github.com/roy-saurabh/rcea-passport-engine}
+  author  = {Saurabh, Roy},
+  year    = {2026},
+  version = {0.1.0},
+  doi     = {10.5281/zenodo.20384670},
+  url     = {https://github.com/roy-saurabh/rcea-passport-engine}
 }
 ```
 
