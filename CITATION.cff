@@ -6,8 +6,8 @@ authors:
   - name: "RCEA Research Team"
 version: 0.1.0
 date-released: "2025-05-25"
-repository-code: "https://github.com/[placeholder]/rcea-passport-engine"
-doi: "10.5281/zenodo.[placeholder]"
+repository-code: "https://github.com/roy-saurabh/rcea-passport-engine"
+doi: "10.5281/zenodo.20384670"
 abstract: >
   Reference implementation of Role-Conditioned Evidentiary Adequacy (RCEA),
   a computable framework for assessing whether AI audit evidence is adequate
@@ -31,4 +31,4 @@ preferred-citation:
     - name: "RCEA Research Team"
   year: 2025
   journal: "[Journal placeholder]"
-  doi: "[DOI placeholder]"
+  doi: "10.5281/zenodo.20384670"

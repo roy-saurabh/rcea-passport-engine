@@ -24,7 +24,7 @@ It generates **evidence passport** views tailored to each governance role, with 
 Requires Python 3.11+.
 
 ```bash
-git clone https://github.com/[placeholder]/rcea-passport-engine.git
+git clone https://github.com/roy-saurabh/rcea-passport-engine.git
 cd rcea-passport-engine
 pip install -e ".[dev]"
 ```
@@ -183,8 +183,8 @@ If you use this software or the RCEA framework, please cite:
   title  = {RCEA Passport Engine: Role-Conditioned Evidentiary Adequacy Reference Implementation},
   author = {RCEA Research Team},
   year   = {2025},
-  doi    = {10.5281/zenodo.[placeholder]},
-  url    = {https://github.com/[placeholder]/rcea-passport-engine}
+  doi    = {10.5281/zenodo.20384670},
+  url    = {https://github.com/roy-saurabh/rcea-passport-engine}
 }
 ```
 

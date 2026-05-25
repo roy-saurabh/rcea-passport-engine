@@ -2,11 +2,11 @@
 
 The RCEA Passport Engine is freely available under the MIT License. Source code is hosted at:
 
-> https://github.com/[placeholder]/rcea-passport-engine
+> https://github.com/roy-saurabh/rcea-passport-engine
 
 A permanently archived snapshot is deposited at Zenodo:
 
-> https://doi.org/10.5281/zenodo.[placeholder]
+> https://doi.org/10.5281/zenodo.20384670
 
 The repository contains only synthetic example data. No personal data, proprietary models, or external API calls are included. All computation is deterministic and self-contained. The software requires Python 3.11 or later and the `pydantic` and `jsonschema` packages.
 
