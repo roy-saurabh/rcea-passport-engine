@@ -55,7 +55,7 @@ def _load_example(name: str) -> tuple[EvidenceFinding, ContextPack, dict[str, Ro
 def generate_subconstruct_table() -> None:
     csv_path = OUTPUT_DIR / "subconstructs.csv"
     with open(csv_path, "w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["construct", "symbol", "description"])
+        writer = csv.DictWriter(f, fieldnames=["construct", "symbol", "description"], lineterminator="\n")
         writer.writeheader()
         for name, sym, desc in SUBCONSTRUCTS:
             writer.writerow({"construct": name, "symbol": sym, "description": desc})
@@ -73,7 +73,7 @@ def generate_role_taxonomy_table() -> None:
     fieldnames = ["role_id", "role_name", "expertise_level", "liability", "typical_actions"]
     csv_path = OUTPUT_DIR / "role_taxonomy.csv"
     with open(csv_path, "w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         for row in ROLE_TAXONOMY:
             writer.writerow(dict(zip(fieldnames, row)))
@@ -109,7 +109,7 @@ def generate_rcea_score_table() -> None:
     fieldnames = ["example", "role"] + all_score_keys
     csv_path = OUTPUT_DIR / "rcea_scores.csv"
     with open(csv_path, "w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
