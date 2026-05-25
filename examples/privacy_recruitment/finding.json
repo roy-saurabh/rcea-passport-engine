@@ -1,0 +1,23 @@
+{
+  "finding_id": "find-privacy-001",
+  "finding_family": "privacy",
+  "metric": "pii_entity_count",
+  "value": 14,
+  "threshold": 0,
+  "severity": "high",
+  "method": "NER + pattern-based PII scan",
+  "uncertainty": "medium",
+  "limitations": [
+    "Validated only for English and French; other languages may have undetected PII",
+    "NER model may miss obfuscated or encoded PII forms"
+  ],
+  "regulatory_mapping": [
+    "GDPR Art. 22",
+    "GDPR Art. 35",
+    "EU AI Act Annex III employment/recruitment"
+  ],
+  "context_tags": ["recruitment", "chatbot", "pii", "gdpr"],
+  "provenance_hash": "a3f1c9e2b7d4e8f0",
+  "timestamp": "2025-03-15T10:30:00Z",
+  "evidence_level": "tested"
+}

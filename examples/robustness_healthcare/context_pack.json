@@ -1,0 +1,14 @@
+{
+  "context_pack_id": "ctx-health-001",
+  "jurisdiction": "EU",
+  "sector": "healthcare",
+  "system_purpose": "AI-assisted radiology diagnostic support system",
+  "risk_class": "high-risk",
+  "deployment_stage": "pre-deployment",
+  "affected_population": "Adult patients in radiology departments",
+  "data_modality": ["medical_imaging", "structured_metadata"],
+  "supplier_status": "internal_development",
+  "regulatory_baseline": ["EU AI Act", "MDR 2017/745"],
+  "policy_baseline": ["Clinical AI Validation Protocol v1.3"],
+  "version": "1.0"
+}

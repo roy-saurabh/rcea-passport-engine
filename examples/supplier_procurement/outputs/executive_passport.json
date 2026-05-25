@@ -1,0 +1,180 @@
+{
+  "action_label": "halt_programme",
+  "claims": [
+    {
+      "claim_id": "claim-9c4c7208b4d07020",
+      "text": "Field 'context_tags' has value ['supplier', 'procurement', 'attestation', 'third-party'] (sourced from finding find-supplier-001 via rule rule-supplier-exec-001).",
+      "trace": {
+        "applied_rule_id": "rule-supplier-exec-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-9c4c7208b4d07020",
+        "context_pack_id": "ctx-proc-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v880d36f484c406aa",
+        "role_id": "executive",
+        "source_finding_id": "find-supplier-001",
+        "source_hash": "c4d5e6f7a8b9c0d1",
+        "source_method": "Supplier attestation gap analysis",
+        "source_timestamp": "2025-05-01T14:00:00Z"
+      },
+      "visible_fields_used": [
+        "context_tags"
+      ]
+    },
+    {
+      "claim_id": "claim-a65f729e79a7e8e3",
+      "text": "Field 'finding_family' has value 'supplier' (sourced from finding find-supplier-001 via rule rule-supplier-exec-001).",
+      "trace": {
+        "applied_rule_id": "rule-supplier-exec-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-a65f729e79a7e8e3",
+        "context_pack_id": "ctx-proc-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v880d36f484c406aa",
+        "role_id": "executive",
+        "source_finding_id": "find-supplier-001",
+        "source_hash": "c4d5e6f7a8b9c0d1",
+        "source_method": "Supplier attestation gap analysis",
+        "source_timestamp": "2025-05-01T14:00:00Z"
+      },
+      "visible_fields_used": [
+        "finding_family"
+      ]
+    },
+    {
+      "claim_id": "claim-c64155d6caf29469",
+      "text": "Field 'severity' has value 'high' (sourced from finding find-supplier-001 via rule rule-supplier-exec-001).",
+      "trace": {
+        "applied_rule_id": "rule-supplier-exec-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-c64155d6caf29469",
+        "context_pack_id": "ctx-proc-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v880d36f484c406aa",
+        "role_id": "executive",
+        "source_finding_id": "find-supplier-001",
+        "source_hash": "c4d5e6f7a8b9c0d1",
+        "source_method": "Supplier attestation gap analysis",
+        "source_timestamp": "2025-05-01T14:00:00Z"
+      },
+      "visible_fields_used": [
+        "severity"
+      ]
+    }
+  ],
+  "decision_relevance": "This passport supports the 'halt_programme' decision for role 'executive'. Confidence: 0.81.",
+  "expires_at": null,
+  "headline": "[HIGH] Supplier finding \u2014 halt_programme (role: executive)",
+  "limitations": [],
+  "overall_rcea": 0.8125,
+  "passport_id": "passport-50dfa8cc58a7768a",
+  "passport_version": "v880d36f484c406aa",
+  "rcea_scores": {
+    "audit_traceability": 1.0,
+    "decision_actionability": 1.0,
+    "epistemic_warrant": 0.5,
+    "interpretive_fit": 1.0,
+    "limitation_propagation": 0.0,
+    "material_relevance": 1.0,
+    "overall": 0.8125
+  },
+  "regulatory_or_policy_references": [],
+  "role_id": "executive",
+  "summary": "A high supplier compliance gap has been identified. Executive review required. Action: halt_programme.",
+  "suppressed_fields": [
+    "evidence_level",
+    "limitations",
+    "method",
+    "metric",
+    "provenance_hash",
+    "regulatory_mapping",
+    "threshold",
+    "uncertainty",
+    "value"
+  ],
+  "suppression_log": [
+    {
+      "field": "evidence_level",
+      "rationale": "Evidence grading suppressed.",
+      "retrievable": true,
+      "role_id": "executive",
+      "rule_id": "rule-supplier-exec-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "limitations",
+      "rationale": "Limitations deferred.",
+      "retrievable": true,
+      "role_id": "executive",
+      "rule_id": "rule-supplier-exec-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "method",
+      "rationale": "Methodology suppressed.",
+      "retrievable": true,
+      "role_id": "executive",
+      "rule_id": "rule-supplier-exec-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "metric",
+      "rationale": "Technical metric suppressed.",
+      "retrievable": true,
+      "role_id": "executive",
+      "rule_id": "rule-supplier-exec-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "provenance_hash",
+      "rationale": "Hash suppressed.",
+      "retrievable": true,
+      "role_id": "executive",
+      "rule_id": "rule-supplier-exec-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "regulatory_mapping",
+      "rationale": "Regulatory detail deferred.",
+      "retrievable": true,
+      "role_id": "executive",
+      "rule_id": "rule-supplier-exec-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "threshold",
+      "rationale": "Threshold suppressed.",
+      "retrievable": true,
+      "role_id": "executive",
+      "rule_id": "rule-supplier-exec-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "uncertainty",
+      "rationale": "Uncertainty suppressed.",
+      "retrievable": true,
+      "role_id": "executive",
+      "rule_id": "rule-supplier-exec-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "value",
+      "rationale": "Detail suppressed.",
+      "retrievable": true,
+      "role_id": "executive",
+      "rule_id": "rule-supplier-exec-001",
+      "rule_version": "1.0.0"
+    }
+  ],
+  "uncertainty_statement": "Low uncertainty; findings are well-supported.",
+  "visible_fields": {
+    "context_tags": [
+      "supplier",
+      "procurement",
+      "attestation",
+      "third-party"
+    ],
+    "finding_family": "supplier",
+    "severity": "high"
+  }
+}

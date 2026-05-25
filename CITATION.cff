@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+title: "RCEA Passport Engine: Role-Conditioned Evidentiary Adequacy Reference Implementation"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - name: "RCEA Research Team"
+version: 0.1.0
+date-released: "2025-05-25"
+repository-code: "https://github.com/[placeholder]/rcea-passport-engine"
+doi: "10.5281/zenodo.[placeholder]"
+abstract: >
+  Reference implementation of Role-Conditioned Evidentiary Adequacy (RCEA),
+  a computable framework for assessing whether AI audit evidence is adequate
+  for role-conditioned governance decisions. The engine generates role-specific
+  evidence passports with deterministic scoring, full traceability, suppression
+  logging, and limitation propagation from a common synthetic evidence substrate.
+keywords:
+  - AI governance
+  - evidence passport
+  - auditability
+  - accountability
+  - RCEA
+  - AI audit
+license: MIT
+preferred-citation:
+  type: article
+  title: >
+    Role-Conditioned Evidentiary Adequacy for AI Governance: A Computable
+    Framework, Evidence Passport Architecture, and Reference Implementation
+  authors:
+    - name: "RCEA Research Team"
+  year: 2025
+  journal: "[Journal placeholder]"
+  doi: "[DOI placeholder]"

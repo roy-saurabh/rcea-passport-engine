@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ContextPack",
+  "type": "object",
+  "required": [
+    "context_pack_id", "jurisdiction", "sector", "system_purpose",
+    "risk_class", "deployment_stage", "affected_population",
+    "data_modality", "supplier_status", "regulatory_baseline",
+    "policy_baseline", "version"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "context_pack_id": { "type": "string" },
+    "jurisdiction": { "type": "string" },
+    "sector": { "type": "string" },
+    "system_purpose": { "type": "string" },
+    "risk_class": { "type": "string" },
+    "deployment_stage": { "type": "string" },
+    "affected_population": { "type": "string" },
+    "data_modality": { "type": "array", "items": { "type": "string" } },
+    "supplier_status": { "type": "string" },
+    "regulatory_baseline": { "type": "array", "items": { "type": "string" } },
+    "policy_baseline": { "type": "array", "items": { "type": "string" } },
+    "version": { "type": "string" }
+  }
+}

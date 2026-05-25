@@ -1,0 +1,21 @@
+{
+  "finding_id": "find-supplier-001",
+  "finding_family": "supplier",
+  "metric": "missing_supplier_attestations",
+  "value": ["data retention policy", "subprocessor list", "model update log"],
+  "threshold": [],
+  "severity": "high",
+  "method": "Supplier attestation gap analysis",
+  "uncertainty": "low",
+  "limitations": [
+    "Gap analysis based on self-reported attestation index; completeness not independently verified"
+  ],
+  "regulatory_mapping": [
+    "GDPR Art. 28 (processor obligations)",
+    "EU AI Act Art. 25 (obligations of deployers)"
+  ],
+  "context_tags": ["supplier", "procurement", "attestation", "third-party"],
+  "provenance_hash": "c4d5e6f7a8b9c0d1",
+  "timestamp": "2025-05-01T14:00:00Z",
+  "evidence_level": "documented"
+}

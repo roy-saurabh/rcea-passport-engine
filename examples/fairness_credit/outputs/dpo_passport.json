@@ -1,0 +1,259 @@
+{
+  "action_label": "require_dpia",
+  "claims": [
+    {
+      "claim_id": "claim-3d5c861e3ecb2d67",
+      "text": "Field 'evidence_level' has value 'tested' (sourced from finding find-fairness-001 via rule rule-fair-dpo-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-dpo-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-3d5c861e3ecb2d67",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v848e9a129d3fb3a1",
+        "role_id": "dpo",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "evidence_level"
+      ]
+    },
+    {
+      "claim_id": "claim-a11a75bd998269d1",
+      "text": "Field 'limitations' has value ['Protected attribute (race/ethnicity) imputed with uncertainty; direct labels unavailable', 'Test set may not represent future application distribution'] (sourced from finding find-fairness-001 via rule rule-fair-dpo-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-dpo-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-a11a75bd998269d1",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v848e9a129d3fb3a1",
+        "role_id": "dpo",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "limitations"
+      ]
+    },
+    {
+      "claim_id": "claim-febce32aa408d9fb",
+      "text": "Field 'metric' has value 'demographic_parity_difference' (sourced from finding find-fairness-001 via rule rule-fair-dpo-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-dpo-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-febce32aa408d9fb",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v848e9a129d3fb3a1",
+        "role_id": "dpo",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "metric"
+      ]
+    },
+    {
+      "claim_id": "claim-4a7f02b5a46e1d80",
+      "text": "Field 'regulatory_mapping' has value ['EU AI Act Annex III credit scoring', 'ECHR Protocol 12 (non-discrimination)'] (sourced from finding find-fairness-001 via rule rule-fair-dpo-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-dpo-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-4a7f02b5a46e1d80",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v848e9a129d3fb3a1",
+        "role_id": "dpo",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "regulatory_mapping"
+      ]
+    },
+    {
+      "claim_id": "claim-c16a3d20f6e9d03f",
+      "text": "Field 'severity' has value 'high' (sourced from finding find-fairness-001 via rule rule-fair-dpo-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-dpo-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-c16a3d20f6e9d03f",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v848e9a129d3fb3a1",
+        "role_id": "dpo",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "severity"
+      ]
+    },
+    {
+      "claim_id": "claim-83b90ca5e5b3869f",
+      "text": "Field 'threshold' has value 0.1 (sourced from finding find-fairness-001 via rule rule-fair-dpo-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-dpo-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-83b90ca5e5b3869f",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v848e9a129d3fb3a1",
+        "role_id": "dpo",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "threshold"
+      ]
+    },
+    {
+      "claim_id": "claim-0373bf55fde832ce",
+      "text": "Field 'uncertainty' has value 'high' (sourced from finding find-fairness-001 via rule rule-fair-dpo-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-dpo-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-0373bf55fde832ce",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v848e9a129d3fb3a1",
+        "role_id": "dpo",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "uncertainty"
+      ]
+    },
+    {
+      "claim_id": "claim-c5cb9a83bec6a4fa",
+      "text": "Field 'value' has value 0.18 (sourced from finding find-fairness-001 via rule rule-fair-dpo-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-dpo-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-c5cb9a83bec6a4fa",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v848e9a129d3fb3a1",
+        "role_id": "dpo",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "value"
+      ]
+    },
+    {
+      "claim_id": "claim-696c1025b1a40c3c",
+      "text": "Applicable regulatory references: ECHR Protocol 12 (non-discrimination), EU AI Act Annex III credit scoring (sourced from finding find-fairness-001 via rule rule-fair-dpo-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-dpo-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-696c1025b1a40c3c",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v848e9a129d3fb3a1",
+        "role_id": "dpo",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "regulatory_mapping"
+      ]
+    }
+  ],
+  "decision_relevance": "This passport supports the 'require_dpia' decision for role 'dpo'. Confidence: 0.85.",
+  "expires_at": null,
+  "headline": "[HIGH] Fairness finding \u2014 require_dpia (role: dpo)",
+  "limitations": [
+    "Protected attribute (race/ethnicity) imputed with uncertainty; direct labels unavailable",
+    "Test set may not represent future application distribution"
+  ],
+  "overall_rcea": 0.85,
+  "passport_id": "passport-9db02516eebb30d9",
+  "passport_version": "v848e9a129d3fb3a1",
+  "rcea_scores": {
+    "audit_traceability": 1.0,
+    "decision_actionability": 1.0,
+    "epistemic_warrant": 0.5,
+    "interpretive_fit": 0.5,
+    "limitation_propagation": 1.0,
+    "material_relevance": 1.0,
+    "normative_alignment": 1.0,
+    "overall": 0.85
+  },
+  "regulatory_or_policy_references": [
+    "ECHR Protocol 12 (non-discrimination)",
+    "EU AI Act Annex III credit scoring"
+  ],
+  "role_id": "dpo",
+  "summary": "Fairness finding: demographic_parity_difference=0.18 (threshold: 0.1). Severity: high. Action: require_dpia for role dpo.",
+  "suppressed_fields": [
+    "context_tags",
+    "method",
+    "provenance_hash"
+  ],
+  "suppression_log": [
+    {
+      "field": "context_tags",
+      "rationale": "Internal tags not relevant to legal determination.",
+      "retrievable": true,
+      "role_id": "dpo",
+      "rule_id": "rule-fair-dpo-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "method",
+      "rationale": "Methodological detail deferred to AI Lead.",
+      "retrievable": true,
+      "role_id": "dpo",
+      "rule_id": "rule-fair-dpo-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "provenance_hash",
+      "rationale": "Technical hash not actionable for legal review.",
+      "retrievable": true,
+      "role_id": "dpo",
+      "rule_id": "rule-fair-dpo-001",
+      "rule_version": "1.0.0"
+    }
+  ],
+  "uncertainty_statement": "High uncertainty; treat findings as indicative only.",
+  "visible_fields": {
+    "evidence_level": "tested",
+    "limitations": [
+      "Protected attribute (race/ethnicity) imputed with uncertainty; direct labels unavailable",
+      "Test set may not represent future application distribution"
+    ],
+    "metric": "demographic_parity_difference",
+    "regulatory_mapping": [
+      "EU AI Act Annex III credit scoring",
+      "ECHR Protocol 12 (non-discrimination)"
+    ],
+    "severity": "high",
+    "threshold": 0.1,
+    "uncertainty": "high",
+    "value": 0.18
+  }
+}

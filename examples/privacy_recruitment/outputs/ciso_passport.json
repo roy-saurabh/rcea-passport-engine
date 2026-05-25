@@ -1,0 +1,211 @@
+{
+  "action_label": "mandate_security_review",
+  "claims": [
+    {
+      "claim_id": "claim-b6dc9b7fed8d05ff",
+      "text": "Field 'limitations' has value ['Validated only for English and French; other languages may have undetected PII', 'NER model may miss obfuscated or encoded PII forms'] (sourced from finding find-privacy-001 via rule rule-priv-ciso-001).",
+      "trace": {
+        "applied_rule_id": "rule-priv-ciso-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-b6dc9b7fed8d05ff",
+        "context_pack_id": "ctx-recruit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v17c4c4b2f86bf1c2",
+        "role_id": "ciso",
+        "source_finding_id": "find-privacy-001",
+        "source_hash": "a3f1c9e2b7d4e8f0",
+        "source_method": "NER + pattern-based PII scan",
+        "source_timestamp": "2025-03-15T10:30:00Z"
+      },
+      "visible_fields_used": [
+        "limitations"
+      ]
+    },
+    {
+      "claim_id": "claim-2ecef465c6aab82a",
+      "text": "Field 'method' has value 'NER + pattern-based PII scan' (sourced from finding find-privacy-001 via rule rule-priv-ciso-001).",
+      "trace": {
+        "applied_rule_id": "rule-priv-ciso-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-2ecef465c6aab82a",
+        "context_pack_id": "ctx-recruit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v17c4c4b2f86bf1c2",
+        "role_id": "ciso",
+        "source_finding_id": "find-privacy-001",
+        "source_hash": "a3f1c9e2b7d4e8f0",
+        "source_method": "NER + pattern-based PII scan",
+        "source_timestamp": "2025-03-15T10:30:00Z"
+      },
+      "visible_fields_used": [
+        "method"
+      ]
+    },
+    {
+      "claim_id": "claim-953fded82f26fecc",
+      "text": "Field 'metric' has value 'pii_entity_count' (sourced from finding find-privacy-001 via rule rule-priv-ciso-001).",
+      "trace": {
+        "applied_rule_id": "rule-priv-ciso-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-953fded82f26fecc",
+        "context_pack_id": "ctx-recruit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v17c4c4b2f86bf1c2",
+        "role_id": "ciso",
+        "source_finding_id": "find-privacy-001",
+        "source_hash": "a3f1c9e2b7d4e8f0",
+        "source_method": "NER + pattern-based PII scan",
+        "source_timestamp": "2025-03-15T10:30:00Z"
+      },
+      "visible_fields_used": [
+        "metric"
+      ]
+    },
+    {
+      "claim_id": "claim-6c1df85331a235fb",
+      "text": "Field 'severity' has value 'high' (sourced from finding find-privacy-001 via rule rule-priv-ciso-001).",
+      "trace": {
+        "applied_rule_id": "rule-priv-ciso-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-6c1df85331a235fb",
+        "context_pack_id": "ctx-recruit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v17c4c4b2f86bf1c2",
+        "role_id": "ciso",
+        "source_finding_id": "find-privacy-001",
+        "source_hash": "a3f1c9e2b7d4e8f0",
+        "source_method": "NER + pattern-based PII scan",
+        "source_timestamp": "2025-03-15T10:30:00Z"
+      },
+      "visible_fields_used": [
+        "severity"
+      ]
+    },
+    {
+      "claim_id": "claim-24789647ea3706f0",
+      "text": "Field 'threshold' has value 0 (sourced from finding find-privacy-001 via rule rule-priv-ciso-001).",
+      "trace": {
+        "applied_rule_id": "rule-priv-ciso-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-24789647ea3706f0",
+        "context_pack_id": "ctx-recruit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v17c4c4b2f86bf1c2",
+        "role_id": "ciso",
+        "source_finding_id": "find-privacy-001",
+        "source_hash": "a3f1c9e2b7d4e8f0",
+        "source_method": "NER + pattern-based PII scan",
+        "source_timestamp": "2025-03-15T10:30:00Z"
+      },
+      "visible_fields_used": [
+        "threshold"
+      ]
+    },
+    {
+      "claim_id": "claim-59b978cef7c4cd61",
+      "text": "Field 'uncertainty' has value 'medium' (sourced from finding find-privacy-001 via rule rule-priv-ciso-001).",
+      "trace": {
+        "applied_rule_id": "rule-priv-ciso-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-59b978cef7c4cd61",
+        "context_pack_id": "ctx-recruit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v17c4c4b2f86bf1c2",
+        "role_id": "ciso",
+        "source_finding_id": "find-privacy-001",
+        "source_hash": "a3f1c9e2b7d4e8f0",
+        "source_method": "NER + pattern-based PII scan",
+        "source_timestamp": "2025-03-15T10:30:00Z"
+      },
+      "visible_fields_used": [
+        "uncertainty"
+      ]
+    },
+    {
+      "claim_id": "claim-c8bb5beb36f75d43",
+      "text": "Field 'value' has value 14 (sourced from finding find-privacy-001 via rule rule-priv-ciso-001).",
+      "trace": {
+        "applied_rule_id": "rule-priv-ciso-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-c8bb5beb36f75d43",
+        "context_pack_id": "ctx-recruit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v17c4c4b2f86bf1c2",
+        "role_id": "ciso",
+        "source_finding_id": "find-privacy-001",
+        "source_hash": "a3f1c9e2b7d4e8f0",
+        "source_method": "NER + pattern-based PII scan",
+        "source_timestamp": "2025-03-15T10:30:00Z"
+      },
+      "visible_fields_used": [
+        "value"
+      ]
+    }
+  ],
+  "decision_relevance": "This passport supports the 'mandate_security_review' decision for role 'ciso'. Confidence: 0.92.",
+  "expires_at": null,
+  "headline": "[HIGH] Privacy finding \u2014 mandate_security_review (role: ciso)",
+  "limitations": [
+    "Validated only for English and French; other languages may have undetected PII",
+    "NER model may miss obfuscated or encoded PII forms"
+  ],
+  "overall_rcea": 0.9222222222222222,
+  "passport_id": "passport-deed13bd23f42e9d",
+  "passport_version": "v17c4c4b2f86bf1c2",
+  "rcea_scores": {
+    "audit_traceability": 1.0,
+    "decision_actionability": 1.0,
+    "epistemic_warrant": 0.65,
+    "interpretive_fit": 1.0,
+    "limitation_propagation": 1.0,
+    "material_relevance": 1.0,
+    "overall": 0.9222222222222222
+  },
+  "regulatory_or_policy_references": [],
+  "role_id": "ciso",
+  "summary": "Finding: pii_entity_count=14 detected via NER + pattern-based PII scan. Severity: high. Recommended action: mandate_security_review.",
+  "suppressed_fields": [
+    "context_tags",
+    "provenance_hash",
+    "regulatory_mapping"
+  ],
+  "suppression_log": [
+    {
+      "field": "context_tags",
+      "rationale": "Internal tags not operationally relevant to security review.",
+      "retrievable": true,
+      "role_id": "ciso",
+      "rule_id": "rule-priv-ciso-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "provenance_hash",
+      "rationale": "Technical hash for audit log only; not relevant to security decision.",
+      "retrievable": true,
+      "role_id": "ciso",
+      "rule_id": "rule-priv-ciso-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "regulatory_mapping",
+      "rationale": "Regulatory interpretation deferred to DPO.",
+      "retrievable": true,
+      "role_id": "ciso",
+      "rule_id": "rule-priv-ciso-001",
+      "rule_version": "1.0.0"
+    }
+  ],
+  "uncertainty_statement": "Medium uncertainty; interpret with caution.",
+  "visible_fields": {
+    "limitations": [
+      "Validated only for English and French; other languages may have undetected PII",
+      "NER model may miss obfuscated or encoded PII forms"
+    ],
+    "method": "NER + pattern-based PII scan",
+    "metric": "pii_entity_count",
+    "severity": "high",
+    "threshold": 0,
+    "uncertainty": "medium",
+    "value": 14
+  }
+}

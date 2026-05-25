@@ -1,0 +1,17 @@
+# RCEA Scores by Example and Role
+
+| example | role | material_relevance | epistemic_warrant | normative_alignment | interpretive_fit | decision_actionability | limitation_propagation | audit_traceability | overall |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| privacy_recruitment | dpo | 1.0000 | 0.6500 | 1.0000 | 0.5000 | 1.0000 | 1.0000 | 1.0000 | 0.8725 |
+| privacy_recruitment | ciso | 1.0000 | 0.6500 | N/A | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 0.9222 |
+| privacy_recruitment | ai_lead | 1.0000 | 0.6500 | N/A | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 0.9028 |
+| privacy_recruitment | executive | 1.0000 | 0.6500 | N/A | 1.0000 | 1.0000 | 0.0000 | 1.0000 | 0.8313 |
+| robustness_healthcare | ciso | 1.0000 | 0.6500 | N/A | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 0.9222 |
+| robustness_healthcare | ai_lead | 1.0000 | 0.6500 | N/A | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 0.9028 |
+| robustness_healthcare | executive | 1.0000 | 0.6500 | N/A | 1.0000 | 1.0000 | 0.0000 | 1.0000 | 0.8313 |
+| supplier_procurement | procurement | 1.0000 | 0.5000 | 1.0000 | 0.3333 | 1.0000 | 1.0000 | 1.0000 | 0.8250 |
+| supplier_procurement | vendor | 1.0000 | 0.5000 | N/A | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 0.8889 |
+| supplier_procurement | executive | 1.0000 | 0.5000 | N/A | 1.0000 | 1.0000 | 0.0000 | 1.0000 | 0.8125 |
+| fairness_credit | dpo | 1.0000 | 0.5000 | 1.0000 | 0.5000 | 1.0000 | 1.0000 | 1.0000 | 0.8500 |
+| fairness_credit | ai_lead | 1.0000 | 0.5000 | N/A | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 0.8611 |
+| fairness_credit | executive | 1.0000 | 0.5000 | N/A | 1.0000 | 1.0000 | 0.0000 | 1.0000 | 0.8125 |

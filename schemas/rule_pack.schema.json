@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RulePack",
+  "type": "object",
+  "required": ["rule_pack_id", "version", "rules"],
+  "additionalProperties": false,
+  "properties": {
+    "rule_pack_id": { "type": "string" },
+    "version": { "type": "string" },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "rule_id", "version", "role_id", "finding_family", "severity_minimum",
+          "context_conditions", "required_fields", "visible_fields", "suppressed_fields",
+          "action_label", "action_rationale_template", "limitation_propagation_required",
+          "regulatory_reference_required", "traceability_requirement", "suppression_rationale"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "rule_id": { "type": "string" },
+          "version": { "type": "string" },
+          "role_id": { "type": "string" },
+          "finding_family": { "type": "string" },
+          "severity_minimum": { "type": "string" },
+          "context_conditions": { "type": "object" },
+          "required_fields": { "type": "array", "items": { "type": "string" } },
+          "visible_fields": { "type": "array", "items": { "type": "string" } },
+          "suppressed_fields": { "type": "array", "items": { "type": "string" } },
+          "action_label": { "type": "string" },
+          "action_rationale_template": { "type": "string" },
+          "limitation_propagation_required": { "type": "boolean" },
+          "regulatory_reference_required": { "type": "boolean" },
+          "traceability_requirement": { "type": "array", "items": { "type": "string" } },
+          "suppression_rationale": {
+            "type": "object",
+            "additionalProperties": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

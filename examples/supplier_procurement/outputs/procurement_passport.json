@@ -1,0 +1,228 @@
+{
+  "action_label": "suspend_vendor_contract",
+  "claims": [
+    {
+      "claim_id": "claim-23fb11aea2c4f489",
+      "text": "Field 'limitations' has value ['Gap analysis based on self-reported attestation index; completeness not independently verified'] (sourced from finding find-supplier-001 via rule rule-supplier-proc-001).",
+      "trace": {
+        "applied_rule_id": "rule-supplier-proc-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-23fb11aea2c4f489",
+        "context_pack_id": "ctx-proc-001",
+        "context_pack_version": "1.0",
+        "passport_version": "vedbb41e4312ce3e9",
+        "role_id": "procurement",
+        "source_finding_id": "find-supplier-001",
+        "source_hash": "c4d5e6f7a8b9c0d1",
+        "source_method": "Supplier attestation gap analysis",
+        "source_timestamp": "2025-05-01T14:00:00Z"
+      },
+      "visible_fields_used": [
+        "limitations"
+      ]
+    },
+    {
+      "claim_id": "claim-bc2fa79271613ab9",
+      "text": "Field 'method' has value 'Supplier attestation gap analysis' (sourced from finding find-supplier-001 via rule rule-supplier-proc-001).",
+      "trace": {
+        "applied_rule_id": "rule-supplier-proc-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-bc2fa79271613ab9",
+        "context_pack_id": "ctx-proc-001",
+        "context_pack_version": "1.0",
+        "passport_version": "vedbb41e4312ce3e9",
+        "role_id": "procurement",
+        "source_finding_id": "find-supplier-001",
+        "source_hash": "c4d5e6f7a8b9c0d1",
+        "source_method": "Supplier attestation gap analysis",
+        "source_timestamp": "2025-05-01T14:00:00Z"
+      },
+      "visible_fields_used": [
+        "method"
+      ]
+    },
+    {
+      "claim_id": "claim-6db8a6c8dfbeb86b",
+      "text": "Field 'metric' has value 'missing_supplier_attestations' (sourced from finding find-supplier-001 via rule rule-supplier-proc-001).",
+      "trace": {
+        "applied_rule_id": "rule-supplier-proc-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-6db8a6c8dfbeb86b",
+        "context_pack_id": "ctx-proc-001",
+        "context_pack_version": "1.0",
+        "passport_version": "vedbb41e4312ce3e9",
+        "role_id": "procurement",
+        "source_finding_id": "find-supplier-001",
+        "source_hash": "c4d5e6f7a8b9c0d1",
+        "source_method": "Supplier attestation gap analysis",
+        "source_timestamp": "2025-05-01T14:00:00Z"
+      },
+      "visible_fields_used": [
+        "metric"
+      ]
+    },
+    {
+      "claim_id": "claim-fdf671c6a67efc6c",
+      "text": "Field 'regulatory_mapping' has value ['GDPR Art. 28 (processor obligations)', 'EU AI Act Art. 25 (obligations of deployers)'] (sourced from finding find-supplier-001 via rule rule-supplier-proc-001).",
+      "trace": {
+        "applied_rule_id": "rule-supplier-proc-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-fdf671c6a67efc6c",
+        "context_pack_id": "ctx-proc-001",
+        "context_pack_version": "1.0",
+        "passport_version": "vedbb41e4312ce3e9",
+        "role_id": "procurement",
+        "source_finding_id": "find-supplier-001",
+        "source_hash": "c4d5e6f7a8b9c0d1",
+        "source_method": "Supplier attestation gap analysis",
+        "source_timestamp": "2025-05-01T14:00:00Z"
+      },
+      "visible_fields_used": [
+        "regulatory_mapping"
+      ]
+    },
+    {
+      "claim_id": "claim-692811993d2fd78c",
+      "text": "Field 'severity' has value 'high' (sourced from finding find-supplier-001 via rule rule-supplier-proc-001).",
+      "trace": {
+        "applied_rule_id": "rule-supplier-proc-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-692811993d2fd78c",
+        "context_pack_id": "ctx-proc-001",
+        "context_pack_version": "1.0",
+        "passport_version": "vedbb41e4312ce3e9",
+        "role_id": "procurement",
+        "source_finding_id": "find-supplier-001",
+        "source_hash": "c4d5e6f7a8b9c0d1",
+        "source_method": "Supplier attestation gap analysis",
+        "source_timestamp": "2025-05-01T14:00:00Z"
+      },
+      "visible_fields_used": [
+        "severity"
+      ]
+    },
+    {
+      "claim_id": "claim-48be4cb87812b7e9",
+      "text": "Field 'value' has value ['data retention policy', 'subprocessor list', 'model update log'] (sourced from finding find-supplier-001 via rule rule-supplier-proc-001).",
+      "trace": {
+        "applied_rule_id": "rule-supplier-proc-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-48be4cb87812b7e9",
+        "context_pack_id": "ctx-proc-001",
+        "context_pack_version": "1.0",
+        "passport_version": "vedbb41e4312ce3e9",
+        "role_id": "procurement",
+        "source_finding_id": "find-supplier-001",
+        "source_hash": "c4d5e6f7a8b9c0d1",
+        "source_method": "Supplier attestation gap analysis",
+        "source_timestamp": "2025-05-01T14:00:00Z"
+      },
+      "visible_fields_used": [
+        "value"
+      ]
+    },
+    {
+      "claim_id": "claim-958bdedd75d316ea",
+      "text": "Applicable regulatory references: EU AI Act Art. 25 (obligations of deployers), GDPR Art. 28 (processor obligations) (sourced from finding find-supplier-001 via rule rule-supplier-proc-001).",
+      "trace": {
+        "applied_rule_id": "rule-supplier-proc-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-958bdedd75d316ea",
+        "context_pack_id": "ctx-proc-001",
+        "context_pack_version": "1.0",
+        "passport_version": "vedbb41e4312ce3e9",
+        "role_id": "procurement",
+        "source_finding_id": "find-supplier-001",
+        "source_hash": "c4d5e6f7a8b9c0d1",
+        "source_method": "Supplier attestation gap analysis",
+        "source_timestamp": "2025-05-01T14:00:00Z"
+      },
+      "visible_fields_used": [
+        "regulatory_mapping"
+      ]
+    }
+  ],
+  "decision_relevance": "This passport supports the 'suspend_vendor_contract' decision for role 'procurement'. Confidence: 0.82.",
+  "expires_at": null,
+  "headline": "[HIGH] Supplier finding \u2014 suspend_vendor_contract (role: procurement)",
+  "limitations": [
+    "Gap analysis based on self-reported attestation index; completeness not independently verified"
+  ],
+  "overall_rcea": 0.825,
+  "passport_id": "passport-a0d89a8a333c303d",
+  "passport_version": "vedbb41e4312ce3e9",
+  "rcea_scores": {
+    "audit_traceability": 1.0,
+    "decision_actionability": 1.0,
+    "epistemic_warrant": 0.5,
+    "interpretive_fit": 0.3333333333333333,
+    "limitation_propagation": 1.0,
+    "material_relevance": 1.0,
+    "normative_alignment": 1.0,
+    "overall": 0.825
+  },
+  "regulatory_or_policy_references": [
+    "EU AI Act Art. 25 (obligations of deployers)",
+    "GDPR Art. 28 (processor obligations)"
+  ],
+  "role_id": "procurement",
+  "summary": "Supplier finding: missing_supplier_attestations missing items detected. Severity: high. Action: suspend_vendor_contract for role procurement.",
+  "suppressed_fields": [
+    "context_tags",
+    "evidence_level",
+    "provenance_hash",
+    "threshold"
+  ],
+  "suppression_log": [
+    {
+      "field": "context_tags",
+      "rationale": "Internal tags not relevant to vendor review.",
+      "retrievable": true,
+      "role_id": "procurement",
+      "rule_id": "rule-supplier-proc-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "evidence_level",
+      "rationale": "Evidence grading internal.",
+      "retrievable": true,
+      "role_id": "procurement",
+      "rule_id": "rule-supplier-proc-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "provenance_hash",
+      "rationale": "Hash not actionable for procurement decision.",
+      "retrievable": true,
+      "role_id": "procurement",
+      "rule_id": "rule-supplier-proc-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "threshold",
+      "rationale": "No numeric threshold for attestation gap analysis.",
+      "retrievable": true,
+      "role_id": "procurement",
+      "rule_id": "rule-supplier-proc-001",
+      "rule_version": "1.0.0"
+    }
+  ],
+  "uncertainty_statement": "Low uncertainty; findings are well-supported.",
+  "visible_fields": {
+    "limitations": [
+      "Gap analysis based on self-reported attestation index; completeness not independently verified"
+    ],
+    "method": "Supplier attestation gap analysis",
+    "metric": "missing_supplier_attestations",
+    "regulatory_mapping": [
+      "GDPR Art. 28 (processor obligations)",
+      "EU AI Act Art. 25 (obligations of deployers)"
+    ],
+    "severity": "high",
+    "value": [
+      "data retention policy",
+      "subprocessor list",
+      "model update log"
+    ]
+  }
+}

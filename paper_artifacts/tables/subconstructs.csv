@@ -1,0 +1,8 @@
+construct,symbol,description
+Material Relevance,MR,Fraction of role-required evidence fields present in the finding
+Epistemic Warrant,EW,"Quality and certainty of the evidence method, penalised for uncertainty"
+Normative Alignment,NA,Coverage of applicable regulatory/policy references
+Interpretive Fit,IF,Match between evidence abstraction level and role expertise
+Decision Actionability,DA,Whether the recommended action is within role authority and all mandatory fields present
+Limitation Propagation,LP,Fraction of material limitations carried forward to passport
+Audit Traceability,AT,Fraction of passport claims with complete trace records

@@ -1,0 +1,76 @@
+{
+  "rule_pack_id": "rp-robust-health-001",
+  "version": "1.0.0",
+  "rules": [
+    {
+      "rule_id": "rule-robust-ciso-001",
+      "version": "1.0.0",
+      "role_id": "ciso",
+      "finding_family": "robustness",
+      "severity_minimum": "high",
+      "context_conditions": {"sector": "healthcare"},
+      "required_fields": ["metric", "value", "method", "severity", "limitations"],
+      "visible_fields": ["metric", "value", "method", "severity", "limitations", "uncertainty", "threshold"],
+      "suppressed_fields": ["regulatory_mapping", "context_tags", "provenance_hash"],
+      "action_label": "halt_deployment",
+      "action_rationale_template": "Robustness finding: {metric}={value} (threshold: {threshold}) via {method}. Severity: {severity}. Action: {action}.",
+      "limitation_propagation_required": true,
+      "regulatory_reference_required": false,
+      "traceability_requirement": ["metric", "value", "method"],
+      "suppression_rationale": {
+        "regulatory_mapping": "Regulatory interpretation deferred to compliance officer.",
+        "context_tags": "Internal tags not relevant to security decision.",
+        "provenance_hash": "Hash stored in audit log only."
+      }
+    },
+    {
+      "rule_id": "rule-robust-ai-lead-001",
+      "version": "1.0.0",
+      "role_id": "ai_lead",
+      "finding_family": "robustness",
+      "severity_minimum": "high",
+      "context_conditions": {"sector": "healthcare"},
+      "required_fields": ["metric", "value", "threshold", "method", "uncertainty", "limitations"],
+      "visible_fields": ["metric", "value", "threshold", "method", "uncertainty", "limitations", "evidence_level"],
+      "suppressed_fields": ["regulatory_mapping", "context_tags", "provenance_hash", "severity"],
+      "action_label": "require_retraining",
+      "action_rationale_template": "Robustness degradation: {metric}={value} (threshold: {threshold}) via {method}. Uncertainty: {uncertainty}. Action: {action}.",
+      "limitation_propagation_required": true,
+      "regulatory_reference_required": false,
+      "traceability_requirement": ["metric", "value", "method"],
+      "suppression_rationale": {
+        "regulatory_mapping": "Regulatory detail deferred to compliance.",
+        "context_tags": "Internal classification.",
+        "provenance_hash": "Audit hash only.",
+        "severity": "Suppressed to encourage metric-based assessment."
+      }
+    },
+    {
+      "rule_id": "rule-robust-exec-001",
+      "version": "1.0.0",
+      "role_id": "executive",
+      "finding_family": "robustness",
+      "severity_minimum": "high",
+      "context_conditions": {"sector": "healthcare"},
+      "required_fields": ["severity", "context_tags"],
+      "visible_fields": ["severity", "context_tags", "finding_family"],
+      "suppressed_fields": ["metric", "value", "threshold", "method", "uncertainty", "limitations", "regulatory_mapping", "provenance_hash", "evidence_level"],
+      "action_label": "halt_programme",
+      "action_rationale_template": "A {severity} robustness finding requires executive review. Action: {action}.",
+      "limitation_propagation_required": false,
+      "regulatory_reference_required": false,
+      "traceability_requirement": ["severity"],
+      "suppression_rationale": {
+        "metric": "Technical metric suppressed for executive view.",
+        "value": "Raw value suppressed.",
+        "threshold": "Technical threshold suppressed.",
+        "method": "Methodology suppressed.",
+        "uncertainty": "Uncertainty detail deferred.",
+        "limitations": "Limitations deferred.",
+        "regulatory_mapping": "Regulatory detail deferred to compliance.",
+        "provenance_hash": "Audit hash not relevant.",
+        "evidence_level": "Evidence grading suppressed."
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "rule_pack_id": "rp-supplier-proc-001",
+  "version": "1.0.0",
+  "rules": [
+    {
+      "rule_id": "rule-supplier-exec-001",
+      "version": "1.0.0",
+      "role_id": "executive",
+      "finding_family": "supplier",
+      "severity_minimum": "high",
+      "context_conditions": {"sector": "procurement"},
+      "required_fields": ["severity", "context_tags"],
+      "visible_fields": ["severity", "context_tags", "finding_family"],
+      "suppressed_fields": ["metric", "value", "method", "threshold", "uncertainty", "limitations", "regulatory_mapping", "provenance_hash", "evidence_level"],
+      "action_label": "halt_programme",
+      "action_rationale_template": "A {severity} supplier compliance gap has been identified. Executive review required. Action: {action}.",
+      "limitation_propagation_required": false,
+      "regulatory_reference_required": false,
+      "traceability_requirement": ["severity"],
+      "suppression_rationale": {
+        "metric": "Technical metric suppressed.",
+        "value": "Detail suppressed.",
+        "method": "Methodology suppressed.",
+        "threshold": "Threshold suppressed.",
+        "uncertainty": "Uncertainty suppressed.",
+        "limitations": "Limitations deferred.",
+        "regulatory_mapping": "Regulatory detail deferred.",
+        "provenance_hash": "Hash suppressed.",
+        "evidence_level": "Evidence grading suppressed."
+      }
+    },
+    {
+      "rule_id": "rule-supplier-proc-001",
+      "version": "1.0.0",
+      "role_id": "procurement",
+      "finding_family": "supplier",
+      "severity_minimum": "high",
+      "context_conditions": {"sector": "procurement"},
+      "required_fields": ["metric", "value", "severity", "regulatory_mapping", "limitations"],
+      "visible_fields": ["metric", "value", "severity", "regulatory_mapping", "limitations", "method"],
+      "suppressed_fields": ["provenance_hash", "context_tags", "evidence_level", "threshold"],
+      "action_label": "suspend_vendor_contract",
+      "action_rationale_template": "Supplier finding: {metric} missing items detected. Severity: {severity}. Action: {action} for role {role}.",
+      "limitation_propagation_required": true,
+      "regulatory_reference_required": true,
+      "traceability_requirement": ["metric", "value", "regulatory_mapping"],
+      "suppression_rationale": {
+        "provenance_hash": "Hash not actionable for procurement decision.",
+        "context_tags": "Internal tags not relevant to vendor review.",
+        "evidence_level": "Evidence grading internal.",
+        "threshold": "No numeric threshold for attestation gap analysis."
+      }
+    },
+    {
+      "rule_id": "rule-supplier-vendor-001",
+      "version": "1.0.0",
+      "role_id": "vendor",
+      "finding_family": "supplier",
+      "severity_minimum": "high",
+      "context_conditions": {"sector": "procurement"},
+      "required_fields": ["metric", "value", "method", "limitations"],
+      "visible_fields": ["metric", "value", "method", "limitations", "severity"],
+      "suppressed_fields": ["provenance_hash", "context_tags", "regulatory_mapping", "evidence_level", "threshold"],
+      "action_label": "provide_attestation",
+      "action_rationale_template": "Missing attestations identified via {method}: {value}. Please provide the missing documents. Action: {action}.",
+      "limitation_propagation_required": true,
+      "regulatory_reference_required": false,
+      "traceability_requirement": ["metric", "value", "method"],
+      "suppression_rationale": {
+        "provenance_hash": "Hash internal.",
+        "context_tags": "Internal tags suppressed.",
+        "regulatory_mapping": "Regulatory interpretation deferred to procurement team.",
+        "evidence_level": "Internal grading.",
+        "threshold": "No numeric threshold applicable."
+      }
+    }
+  ]
+}

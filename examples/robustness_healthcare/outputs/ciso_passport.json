@@ -1,0 +1,211 @@
+{
+  "action_label": "halt_deployment",
+  "claims": [
+    {
+      "claim_id": "claim-33167fa2cc86b4ab",
+      "text": "Field 'limitations' has value ['Evaluated only on synthetic test split; real-world adversarial distribution unknown', 'PGD attack budget may not reflect operational threat model'] (sourced from finding find-robust-001 via rule rule-robust-ciso-001).",
+      "trace": {
+        "applied_rule_id": "rule-robust-ciso-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-33167fa2cc86b4ab",
+        "context_pack_id": "ctx-health-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v911e4832b5e4b4d0",
+        "role_id": "ciso",
+        "source_finding_id": "find-robust-001",
+        "source_hash": "b7e2f4a1c9d3e5f6",
+        "source_method": "projected-gradient adversarial evaluation",
+        "source_timestamp": "2025-04-01T08:00:00Z"
+      },
+      "visible_fields_used": [
+        "limitations"
+      ]
+    },
+    {
+      "claim_id": "claim-18582701b777afe9",
+      "text": "Field 'method' has value 'projected-gradient adversarial evaluation' (sourced from finding find-robust-001 via rule rule-robust-ciso-001).",
+      "trace": {
+        "applied_rule_id": "rule-robust-ciso-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-18582701b777afe9",
+        "context_pack_id": "ctx-health-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v911e4832b5e4b4d0",
+        "role_id": "ciso",
+        "source_finding_id": "find-robust-001",
+        "source_hash": "b7e2f4a1c9d3e5f6",
+        "source_method": "projected-gradient adversarial evaluation",
+        "source_timestamp": "2025-04-01T08:00:00Z"
+      },
+      "visible_fields_used": [
+        "method"
+      ]
+    },
+    {
+      "claim_id": "claim-fc30568b3d19458b",
+      "text": "Field 'metric' has value 'adversarial_accuracy_drop' (sourced from finding find-robust-001 via rule rule-robust-ciso-001).",
+      "trace": {
+        "applied_rule_id": "rule-robust-ciso-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-fc30568b3d19458b",
+        "context_pack_id": "ctx-health-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v911e4832b5e4b4d0",
+        "role_id": "ciso",
+        "source_finding_id": "find-robust-001",
+        "source_hash": "b7e2f4a1c9d3e5f6",
+        "source_method": "projected-gradient adversarial evaluation",
+        "source_timestamp": "2025-04-01T08:00:00Z"
+      },
+      "visible_fields_used": [
+        "metric"
+      ]
+    },
+    {
+      "claim_id": "claim-c80b9f0a6bd65a8e",
+      "text": "Field 'severity' has value 'high' (sourced from finding find-robust-001 via rule rule-robust-ciso-001).",
+      "trace": {
+        "applied_rule_id": "rule-robust-ciso-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-c80b9f0a6bd65a8e",
+        "context_pack_id": "ctx-health-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v911e4832b5e4b4d0",
+        "role_id": "ciso",
+        "source_finding_id": "find-robust-001",
+        "source_hash": "b7e2f4a1c9d3e5f6",
+        "source_method": "projected-gradient adversarial evaluation",
+        "source_timestamp": "2025-04-01T08:00:00Z"
+      },
+      "visible_fields_used": [
+        "severity"
+      ]
+    },
+    {
+      "claim_id": "claim-82d0b61ca9a66bc3",
+      "text": "Field 'threshold' has value 0.05 (sourced from finding find-robust-001 via rule rule-robust-ciso-001).",
+      "trace": {
+        "applied_rule_id": "rule-robust-ciso-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-82d0b61ca9a66bc3",
+        "context_pack_id": "ctx-health-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v911e4832b5e4b4d0",
+        "role_id": "ciso",
+        "source_finding_id": "find-robust-001",
+        "source_hash": "b7e2f4a1c9d3e5f6",
+        "source_method": "projected-gradient adversarial evaluation",
+        "source_timestamp": "2025-04-01T08:00:00Z"
+      },
+      "visible_fields_used": [
+        "threshold"
+      ]
+    },
+    {
+      "claim_id": "claim-13dd10d293a287db",
+      "text": "Field 'uncertainty' has value 'medium' (sourced from finding find-robust-001 via rule rule-robust-ciso-001).",
+      "trace": {
+        "applied_rule_id": "rule-robust-ciso-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-13dd10d293a287db",
+        "context_pack_id": "ctx-health-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v911e4832b5e4b4d0",
+        "role_id": "ciso",
+        "source_finding_id": "find-robust-001",
+        "source_hash": "b7e2f4a1c9d3e5f6",
+        "source_method": "projected-gradient adversarial evaluation",
+        "source_timestamp": "2025-04-01T08:00:00Z"
+      },
+      "visible_fields_used": [
+        "uncertainty"
+      ]
+    },
+    {
+      "claim_id": "claim-04e54d0c757ef429",
+      "text": "Field 'value' has value 0.28 (sourced from finding find-robust-001 via rule rule-robust-ciso-001).",
+      "trace": {
+        "applied_rule_id": "rule-robust-ciso-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-04e54d0c757ef429",
+        "context_pack_id": "ctx-health-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v911e4832b5e4b4d0",
+        "role_id": "ciso",
+        "source_finding_id": "find-robust-001",
+        "source_hash": "b7e2f4a1c9d3e5f6",
+        "source_method": "projected-gradient adversarial evaluation",
+        "source_timestamp": "2025-04-01T08:00:00Z"
+      },
+      "visible_fields_used": [
+        "value"
+      ]
+    }
+  ],
+  "decision_relevance": "This passport supports the 'halt_deployment' decision for role 'ciso'. Confidence: 0.92.",
+  "expires_at": null,
+  "headline": "[HIGH] Robustness finding \u2014 halt_deployment (role: ciso)",
+  "limitations": [
+    "Evaluated only on synthetic test split; real-world adversarial distribution unknown",
+    "PGD attack budget may not reflect operational threat model"
+  ],
+  "overall_rcea": 0.9222222222222222,
+  "passport_id": "passport-9928071947629d08",
+  "passport_version": "v911e4832b5e4b4d0",
+  "rcea_scores": {
+    "audit_traceability": 1.0,
+    "decision_actionability": 1.0,
+    "epistemic_warrant": 0.65,
+    "interpretive_fit": 1.0,
+    "limitation_propagation": 1.0,
+    "material_relevance": 1.0,
+    "overall": 0.9222222222222222
+  },
+  "regulatory_or_policy_references": [],
+  "role_id": "ciso",
+  "summary": "Robustness finding: adversarial_accuracy_drop=0.28 (threshold: 0.05) via projected-gradient adversarial evaluation. Severity: high. Action: halt_deployment.",
+  "suppressed_fields": [
+    "context_tags",
+    "provenance_hash",
+    "regulatory_mapping"
+  ],
+  "suppression_log": [
+    {
+      "field": "context_tags",
+      "rationale": "Internal tags not relevant to security decision.",
+      "retrievable": true,
+      "role_id": "ciso",
+      "rule_id": "rule-robust-ciso-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "provenance_hash",
+      "rationale": "Hash stored in audit log only.",
+      "retrievable": true,
+      "role_id": "ciso",
+      "rule_id": "rule-robust-ciso-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "regulatory_mapping",
+      "rationale": "Regulatory interpretation deferred to compliance officer.",
+      "retrievable": true,
+      "role_id": "ciso",
+      "rule_id": "rule-robust-ciso-001",
+      "rule_version": "1.0.0"
+    }
+  ],
+  "uncertainty_statement": "Medium uncertainty; interpret with caution.",
+  "visible_fields": {
+    "limitations": [
+      "Evaluated only on synthetic test split; real-world adversarial distribution unknown",
+      "PGD attack budget may not reflect operational threat model"
+    ],
+    "method": "projected-gradient adversarial evaluation",
+    "metric": "adversarial_accuracy_drop",
+    "severity": "high",
+    "threshold": 0.05,
+    "uncertainty": "medium",
+    "value": 0.28
+  }
+}

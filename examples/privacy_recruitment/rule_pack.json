@@ -1,0 +1,97 @@
+{
+  "rule_pack_id": "rp-privacy-recruit-001",
+  "version": "1.0.0",
+  "rules": [
+    {
+      "rule_id": "rule-priv-dpo-001",
+      "version": "1.0.0",
+      "role_id": "dpo",
+      "finding_family": "privacy",
+      "severity_minimum": "medium",
+      "context_conditions": {"sector": "recruitment"},
+      "required_fields": ["metric", "value", "threshold", "severity", "regulatory_mapping", "limitations"],
+      "visible_fields": ["metric", "value", "threshold", "severity", "regulatory_mapping", "limitations", "uncertainty", "evidence_level"],
+      "suppressed_fields": ["provenance_hash", "method", "context_tags"],
+      "action_label": "suspend_processing",
+      "action_rationale_template": "Finding: {metric}={value} (threshold: {threshold}). Severity: {severity}. Recommended action: {action} for role {role}.",
+      "limitation_propagation_required": true,
+      "regulatory_reference_required": true,
+      "traceability_requirement": ["metric", "value", "regulatory_mapping"],
+      "suppression_rationale": {
+        "provenance_hash": "Technical hash not actionable for legal review.",
+        "method": "Methodological detail deferred to AI Lead review.",
+        "context_tags": "Internal tagging metadata not relevant to legal determination."
+      }
+    },
+    {
+      "rule_id": "rule-priv-ciso-001",
+      "version": "1.0.0",
+      "role_id": "ciso",
+      "finding_family": "privacy",
+      "severity_minimum": "medium",
+      "context_conditions": {"sector": "recruitment"},
+      "required_fields": ["metric", "value", "method", "severity", "limitations"],
+      "visible_fields": ["metric", "value", "method", "severity", "limitations", "uncertainty", "threshold"],
+      "suppressed_fields": ["regulatory_mapping", "context_tags", "provenance_hash"],
+      "action_label": "mandate_security_review",
+      "action_rationale_template": "Finding: {metric}={value} detected via {method}. Severity: {severity}. Recommended action: {action}.",
+      "limitation_propagation_required": true,
+      "regulatory_reference_required": false,
+      "traceability_requirement": ["metric", "value", "method"],
+      "suppression_rationale": {
+        "regulatory_mapping": "Regulatory interpretation deferred to DPO.",
+        "context_tags": "Internal tags not operationally relevant to security review.",
+        "provenance_hash": "Technical hash for audit log only; not relevant to security decision."
+      }
+    },
+    {
+      "rule_id": "rule-priv-ai-lead-001",
+      "version": "1.0.0",
+      "role_id": "ai_lead",
+      "finding_family": "privacy",
+      "severity_minimum": "medium",
+      "context_conditions": {"sector": "recruitment"},
+      "required_fields": ["metric", "value", "threshold", "method", "uncertainty", "limitations"],
+      "visible_fields": ["metric", "value", "threshold", "method", "uncertainty", "limitations", "evidence_level"],
+      "suppressed_fields": ["regulatory_mapping", "context_tags", "provenance_hash", "severity"],
+      "action_label": "commission_audit",
+      "action_rationale_template": "Finding: {metric}={value} (threshold: {threshold}) via {method}. Uncertainty: {uncertainty}. Recommended: {action}.",
+      "limitation_propagation_required": true,
+      "regulatory_reference_required": false,
+      "traceability_requirement": ["metric", "value", "method"],
+      "suppression_rationale": {
+        "regulatory_mapping": "Regulatory mapping handled by DPO; not within AI lead scope for this view.",
+        "context_tags": "Internal classification tags.",
+        "provenance_hash": "Hash stored in audit log; not needed for model remediation decision.",
+        "severity": "Severity label suppressed to avoid anchoring; AI lead should interpret raw metric."
+      }
+    },
+    {
+      "rule_id": "rule-priv-exec-001",
+      "version": "1.0.0",
+      "role_id": "executive",
+      "finding_family": "privacy",
+      "severity_minimum": "high",
+      "context_conditions": {"sector": "recruitment"},
+      "required_fields": ["severity", "regulatory_mapping", "context_tags"],
+      "visible_fields": ["severity", "context_tags", "finding_family"],
+      "suppressed_fields": ["metric", "value", "threshold", "method", "uncertainty", "limitations", "regulatory_mapping", "provenance_hash", "evidence_level"],
+      "action_label": "require_board_briefing",
+      "action_rationale_template": "A {severity} privacy finding has been identified in the {role} context. Recommended action: {action}.",
+      "limitation_propagation_required": false,
+      "regulatory_reference_required": false,
+      "traceability_requirement": ["severity"],
+      "suppression_rationale": {
+        "metric": "Technical metric not required for executive decision.",
+        "value": "Raw value suppressed; severity label sufficient.",
+        "threshold": "Technical threshold suppressed.",
+        "method": "Methodology detail suppressed for executive view.",
+        "uncertainty": "Uncertainty details handled by AI Lead.",
+        "limitations": "Detailed limitations deferred to DPO/AI Lead.",
+        "regulatory_mapping": "Regulatory detail deferred to DPO briefing.",
+        "provenance_hash": "Audit hash not relevant to executive decision.",
+        "evidence_level": "Evidence grading detail not required at executive level."
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "finding_id": "find-fairness-001",
+  "finding_family": "fairness",
+  "metric": "demographic_parity_difference",
+  "value": 0.18,
+  "threshold": 0.10,
+  "severity": "high",
+  "method": "Demographic parity difference computed on held-out test set",
+  "uncertainty": "high",
+  "limitations": [
+    "Protected attribute (race/ethnicity) imputed with uncertainty; direct labels unavailable",
+    "Test set may not represent future application distribution"
+  ],
+  "regulatory_mapping": [
+    "EU AI Act Annex III credit scoring",
+    "ECHR Protocol 12 (non-discrimination)"
+  ],
+  "context_tags": ["credit", "lending", "fairness", "high-risk"],
+  "provenance_hash": "d8e9f0a1b2c3d4e5",
+  "timestamp": "2025-05-10T11:00:00Z",
+  "evidence_level": "tested"
+}

@@ -1,0 +1,22 @@
+{
+  "finding_id": "find-robust-001",
+  "finding_family": "robustness",
+  "metric": "adversarial_accuracy_drop",
+  "value": 0.28,
+  "threshold": 0.05,
+  "severity": "high",
+  "method": "projected-gradient adversarial evaluation",
+  "uncertainty": "medium",
+  "limitations": [
+    "Evaluated only on synthetic test split; real-world adversarial distribution unknown",
+    "PGD attack budget may not reflect operational threat model"
+  ],
+  "regulatory_mapping": [
+    "EU AI Act Art. 15 (accuracy and robustness)",
+    "IEC 62304 (medical software)"
+  ],
+  "context_tags": ["diagnostic-ai", "radiology", "adversarial", "safety-critical"],
+  "provenance_hash": "b7e2f4a1c9d3e5f6",
+  "timestamp": "2025-04-01T08:00:00Z",
+  "evidence_level": "tested"
+}

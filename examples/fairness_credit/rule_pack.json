@@ -1,0 +1,76 @@
+{
+  "rule_pack_id": "rp-fairness-credit-001",
+  "version": "1.0.0",
+  "rules": [
+    {
+      "rule_id": "rule-fair-dpo-001",
+      "version": "1.0.0",
+      "role_id": "dpo",
+      "finding_family": "fairness",
+      "severity_minimum": "medium",
+      "context_conditions": {"sector": "financial_services"},
+      "required_fields": ["metric", "value", "threshold", "severity", "regulatory_mapping", "limitations"],
+      "visible_fields": ["metric", "value", "threshold", "severity", "regulatory_mapping", "limitations", "uncertainty", "evidence_level"],
+      "suppressed_fields": ["provenance_hash", "method", "context_tags"],
+      "action_label": "require_dpia",
+      "action_rationale_template": "Fairness finding: {metric}={value} (threshold: {threshold}). Severity: {severity}. Action: {action} for role {role}.",
+      "limitation_propagation_required": true,
+      "regulatory_reference_required": true,
+      "traceability_requirement": ["metric", "value", "regulatory_mapping"],
+      "suppression_rationale": {
+        "provenance_hash": "Technical hash not actionable for legal review.",
+        "method": "Methodological detail deferred to AI Lead.",
+        "context_tags": "Internal tags not relevant to legal determination."
+      }
+    },
+    {
+      "rule_id": "rule-fair-ai-lead-001",
+      "version": "1.0.0",
+      "role_id": "ai_lead",
+      "finding_family": "fairness",
+      "severity_minimum": "medium",
+      "context_conditions": {"sector": "financial_services"},
+      "required_fields": ["metric", "value", "threshold", "method", "uncertainty", "limitations"],
+      "visible_fields": ["metric", "value", "threshold", "method", "uncertainty", "limitations", "evidence_level"],
+      "suppressed_fields": ["regulatory_mapping", "context_tags", "provenance_hash", "severity"],
+      "action_label": "require_retraining",
+      "action_rationale_template": "Fairness: {metric}={value} (threshold: {threshold}) via {method}. Uncertainty: {uncertainty}. Action: {action}.",
+      "limitation_propagation_required": true,
+      "regulatory_reference_required": false,
+      "traceability_requirement": ["metric", "value", "method"],
+      "suppression_rationale": {
+        "regulatory_mapping": "Regulatory mapping handled by DPO.",
+        "context_tags": "Internal tags.",
+        "provenance_hash": "Audit hash only.",
+        "severity": "Suppressed to encourage metric-based assessment."
+      }
+    },
+    {
+      "rule_id": "rule-fair-exec-001",
+      "version": "1.0.0",
+      "role_id": "executive",
+      "finding_family": "fairness",
+      "severity_minimum": "high",
+      "context_conditions": {"sector": "financial_services"},
+      "required_fields": ["severity", "context_tags"],
+      "visible_fields": ["severity", "context_tags", "finding_family"],
+      "suppressed_fields": ["metric", "value", "threshold", "method", "uncertainty", "limitations", "regulatory_mapping", "provenance_hash", "evidence_level"],
+      "action_label": "halt_programme",
+      "action_rationale_template": "A {severity} fairness finding requires executive review. Action: {action}.",
+      "limitation_propagation_required": false,
+      "regulatory_reference_required": false,
+      "traceability_requirement": ["severity"],
+      "suppression_rationale": {
+        "metric": "Technical metric suppressed.",
+        "value": "Raw value suppressed.",
+        "threshold": "Technical threshold suppressed.",
+        "method": "Methodology suppressed.",
+        "uncertainty": "Uncertainty suppressed.",
+        "limitations": "Limitations deferred.",
+        "regulatory_mapping": "Regulatory detail deferred.",
+        "provenance_hash": "Hash suppressed.",
+        "evidence_level": "Evidence grading suppressed."
+      }
+    }
+  ]
+}

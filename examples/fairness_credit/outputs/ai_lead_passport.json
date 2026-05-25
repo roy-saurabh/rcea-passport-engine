@@ -1,0 +1,220 @@
+{
+  "action_label": "require_retraining",
+  "claims": [
+    {
+      "claim_id": "claim-1c4206d2342ea6c6",
+      "text": "Field 'evidence_level' has value 'tested' (sourced from finding find-fairness-001 via rule rule-fair-ai-lead-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-ai-lead-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-1c4206d2342ea6c6",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v80b62120f4931097",
+        "role_id": "ai_lead",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "evidence_level"
+      ]
+    },
+    {
+      "claim_id": "claim-2ef283286fbe6f4f",
+      "text": "Field 'limitations' has value ['Protected attribute (race/ethnicity) imputed with uncertainty; direct labels unavailable', 'Test set may not represent future application distribution'] (sourced from finding find-fairness-001 via rule rule-fair-ai-lead-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-ai-lead-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-2ef283286fbe6f4f",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v80b62120f4931097",
+        "role_id": "ai_lead",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "limitations"
+      ]
+    },
+    {
+      "claim_id": "claim-b9f9ea70560095b1",
+      "text": "Field 'method' has value 'Demographic parity difference computed on held-out test set' (sourced from finding find-fairness-001 via rule rule-fair-ai-lead-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-ai-lead-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-b9f9ea70560095b1",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v80b62120f4931097",
+        "role_id": "ai_lead",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "method"
+      ]
+    },
+    {
+      "claim_id": "claim-7b59dd1435d903f4",
+      "text": "Field 'metric' has value 'demographic_parity_difference' (sourced from finding find-fairness-001 via rule rule-fair-ai-lead-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-ai-lead-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-7b59dd1435d903f4",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v80b62120f4931097",
+        "role_id": "ai_lead",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "metric"
+      ]
+    },
+    {
+      "claim_id": "claim-d87e5034331ab85e",
+      "text": "Field 'threshold' has value 0.1 (sourced from finding find-fairness-001 via rule rule-fair-ai-lead-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-ai-lead-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-d87e5034331ab85e",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v80b62120f4931097",
+        "role_id": "ai_lead",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "threshold"
+      ]
+    },
+    {
+      "claim_id": "claim-f255aa742b2d2f51",
+      "text": "Field 'uncertainty' has value 'high' (sourced from finding find-fairness-001 via rule rule-fair-ai-lead-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-ai-lead-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-f255aa742b2d2f51",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v80b62120f4931097",
+        "role_id": "ai_lead",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "uncertainty"
+      ]
+    },
+    {
+      "claim_id": "claim-b23066ea5bc786e1",
+      "text": "Field 'value' has value 0.18 (sourced from finding find-fairness-001 via rule rule-fair-ai-lead-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-ai-lead-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-b23066ea5bc786e1",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v80b62120f4931097",
+        "role_id": "ai_lead",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "value"
+      ]
+    }
+  ],
+  "decision_relevance": "This passport supports the 'require_retraining' decision for role 'ai_lead'. Confidence: 0.86.",
+  "expires_at": null,
+  "headline": "[HIGH] Fairness finding \u2014 require_retraining (role: ai_lead)",
+  "limitations": [
+    "Protected attribute (race/ethnicity) imputed with uncertainty; direct labels unavailable",
+    "Test set may not represent future application distribution"
+  ],
+  "overall_rcea": 0.8611111111111112,
+  "passport_id": "passport-87a20fc7ca7a97b1",
+  "passport_version": "v80b62120f4931097",
+  "rcea_scores": {
+    "audit_traceability": 1.0,
+    "decision_actionability": 1.0,
+    "epistemic_warrant": 0.5,
+    "interpretive_fit": 1.0,
+    "limitation_propagation": 1.0,
+    "material_relevance": 1.0,
+    "overall": 0.8611111111111112
+  },
+  "regulatory_or_policy_references": [],
+  "role_id": "ai_lead",
+  "summary": "Fairness: demographic_parity_difference=0.18 (threshold: 0.1) via Demographic parity difference computed on held-out test set. Uncertainty: high. Action: require_retraining.",
+  "suppressed_fields": [
+    "context_tags",
+    "provenance_hash",
+    "regulatory_mapping",
+    "severity"
+  ],
+  "suppression_log": [
+    {
+      "field": "context_tags",
+      "rationale": "Internal tags.",
+      "retrievable": true,
+      "role_id": "ai_lead",
+      "rule_id": "rule-fair-ai-lead-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "provenance_hash",
+      "rationale": "Audit hash only.",
+      "retrievable": true,
+      "role_id": "ai_lead",
+      "rule_id": "rule-fair-ai-lead-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "regulatory_mapping",
+      "rationale": "Regulatory mapping handled by DPO.",
+      "retrievable": true,
+      "role_id": "ai_lead",
+      "rule_id": "rule-fair-ai-lead-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "severity",
+      "rationale": "Suppressed to encourage metric-based assessment.",
+      "retrievable": true,
+      "role_id": "ai_lead",
+      "rule_id": "rule-fair-ai-lead-001",
+      "rule_version": "1.0.0"
+    }
+  ],
+  "uncertainty_statement": "High uncertainty; treat findings as indicative only.",
+  "visible_fields": {
+    "evidence_level": "tested",
+    "limitations": [
+      "Protected attribute (race/ethnicity) imputed with uncertainty; direct labels unavailable",
+      "Test set may not represent future application distribution"
+    ],
+    "method": "Demographic parity difference computed on held-out test set",
+    "metric": "demographic_parity_difference",
+    "threshold": 0.1,
+    "uncertainty": "high",
+    "value": 0.18
+  }
+}

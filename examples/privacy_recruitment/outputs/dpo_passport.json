@@ -1,0 +1,261 @@
+{
+  "action_label": "suspend_processing",
+  "claims": [
+    {
+      "claim_id": "claim-58b56dc819795ab0",
+      "text": "Field 'evidence_level' has value 'tested' (sourced from finding find-privacy-001 via rule rule-priv-dpo-001).",
+      "trace": {
+        "applied_rule_id": "rule-priv-dpo-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-58b56dc819795ab0",
+        "context_pack_id": "ctx-recruit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "va54aafbb664959e5",
+        "role_id": "dpo",
+        "source_finding_id": "find-privacy-001",
+        "source_hash": "a3f1c9e2b7d4e8f0",
+        "source_method": "NER + pattern-based PII scan",
+        "source_timestamp": "2025-03-15T10:30:00Z"
+      },
+      "visible_fields_used": [
+        "evidence_level"
+      ]
+    },
+    {
+      "claim_id": "claim-6bdd797bc8965576",
+      "text": "Field 'limitations' has value ['Validated only for English and French; other languages may have undetected PII', 'NER model may miss obfuscated or encoded PII forms'] (sourced from finding find-privacy-001 via rule rule-priv-dpo-001).",
+      "trace": {
+        "applied_rule_id": "rule-priv-dpo-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-6bdd797bc8965576",
+        "context_pack_id": "ctx-recruit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "va54aafbb664959e5",
+        "role_id": "dpo",
+        "source_finding_id": "find-privacy-001",
+        "source_hash": "a3f1c9e2b7d4e8f0",
+        "source_method": "NER + pattern-based PII scan",
+        "source_timestamp": "2025-03-15T10:30:00Z"
+      },
+      "visible_fields_used": [
+        "limitations"
+      ]
+    },
+    {
+      "claim_id": "claim-fa89b04f40acec36",
+      "text": "Field 'metric' has value 'pii_entity_count' (sourced from finding find-privacy-001 via rule rule-priv-dpo-001).",
+      "trace": {
+        "applied_rule_id": "rule-priv-dpo-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-fa89b04f40acec36",
+        "context_pack_id": "ctx-recruit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "va54aafbb664959e5",
+        "role_id": "dpo",
+        "source_finding_id": "find-privacy-001",
+        "source_hash": "a3f1c9e2b7d4e8f0",
+        "source_method": "NER + pattern-based PII scan",
+        "source_timestamp": "2025-03-15T10:30:00Z"
+      },
+      "visible_fields_used": [
+        "metric"
+      ]
+    },
+    {
+      "claim_id": "claim-a7c817621a0ab8a6",
+      "text": "Field 'regulatory_mapping' has value ['GDPR Art. 22', 'GDPR Art. 35', 'EU AI Act Annex III employment/recruitment'] (sourced from finding find-privacy-001 via rule rule-priv-dpo-001).",
+      "trace": {
+        "applied_rule_id": "rule-priv-dpo-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-a7c817621a0ab8a6",
+        "context_pack_id": "ctx-recruit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "va54aafbb664959e5",
+        "role_id": "dpo",
+        "source_finding_id": "find-privacy-001",
+        "source_hash": "a3f1c9e2b7d4e8f0",
+        "source_method": "NER + pattern-based PII scan",
+        "source_timestamp": "2025-03-15T10:30:00Z"
+      },
+      "visible_fields_used": [
+        "regulatory_mapping"
+      ]
+    },
+    {
+      "claim_id": "claim-8f1d4e508199a69e",
+      "text": "Field 'severity' has value 'high' (sourced from finding find-privacy-001 via rule rule-priv-dpo-001).",
+      "trace": {
+        "applied_rule_id": "rule-priv-dpo-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-8f1d4e508199a69e",
+        "context_pack_id": "ctx-recruit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "va54aafbb664959e5",
+        "role_id": "dpo",
+        "source_finding_id": "find-privacy-001",
+        "source_hash": "a3f1c9e2b7d4e8f0",
+        "source_method": "NER + pattern-based PII scan",
+        "source_timestamp": "2025-03-15T10:30:00Z"
+      },
+      "visible_fields_used": [
+        "severity"
+      ]
+    },
+    {
+      "claim_id": "claim-383056d43fa6dfba",
+      "text": "Field 'threshold' has value 0 (sourced from finding find-privacy-001 via rule rule-priv-dpo-001).",
+      "trace": {
+        "applied_rule_id": "rule-priv-dpo-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-383056d43fa6dfba",
+        "context_pack_id": "ctx-recruit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "va54aafbb664959e5",
+        "role_id": "dpo",
+        "source_finding_id": "find-privacy-001",
+        "source_hash": "a3f1c9e2b7d4e8f0",
+        "source_method": "NER + pattern-based PII scan",
+        "source_timestamp": "2025-03-15T10:30:00Z"
+      },
+      "visible_fields_used": [
+        "threshold"
+      ]
+    },
+    {
+      "claim_id": "claim-d4f928feac7002ce",
+      "text": "Field 'uncertainty' has value 'medium' (sourced from finding find-privacy-001 via rule rule-priv-dpo-001).",
+      "trace": {
+        "applied_rule_id": "rule-priv-dpo-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-d4f928feac7002ce",
+        "context_pack_id": "ctx-recruit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "va54aafbb664959e5",
+        "role_id": "dpo",
+        "source_finding_id": "find-privacy-001",
+        "source_hash": "a3f1c9e2b7d4e8f0",
+        "source_method": "NER + pattern-based PII scan",
+        "source_timestamp": "2025-03-15T10:30:00Z"
+      },
+      "visible_fields_used": [
+        "uncertainty"
+      ]
+    },
+    {
+      "claim_id": "claim-2826d254ac11e911",
+      "text": "Field 'value' has value 14 (sourced from finding find-privacy-001 via rule rule-priv-dpo-001).",
+      "trace": {
+        "applied_rule_id": "rule-priv-dpo-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-2826d254ac11e911",
+        "context_pack_id": "ctx-recruit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "va54aafbb664959e5",
+        "role_id": "dpo",
+        "source_finding_id": "find-privacy-001",
+        "source_hash": "a3f1c9e2b7d4e8f0",
+        "source_method": "NER + pattern-based PII scan",
+        "source_timestamp": "2025-03-15T10:30:00Z"
+      },
+      "visible_fields_used": [
+        "value"
+      ]
+    },
+    {
+      "claim_id": "claim-30803892d5f2f87c",
+      "text": "Applicable regulatory references: EU AI Act Annex III employment/recruitment, GDPR Art. 22, GDPR Art. 35 (sourced from finding find-privacy-001 via rule rule-priv-dpo-001).",
+      "trace": {
+        "applied_rule_id": "rule-priv-dpo-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-30803892d5f2f87c",
+        "context_pack_id": "ctx-recruit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "va54aafbb664959e5",
+        "role_id": "dpo",
+        "source_finding_id": "find-privacy-001",
+        "source_hash": "a3f1c9e2b7d4e8f0",
+        "source_method": "NER + pattern-based PII scan",
+        "source_timestamp": "2025-03-15T10:30:00Z"
+      },
+      "visible_fields_used": [
+        "regulatory_mapping"
+      ]
+    }
+  ],
+  "decision_relevance": "This passport supports the 'suspend_processing' decision for role 'dpo'. Confidence: 0.87.",
+  "expires_at": null,
+  "headline": "[HIGH] Privacy finding \u2014 suspend_processing (role: dpo)",
+  "limitations": [
+    "Validated only for English and French; other languages may have undetected PII",
+    "NER model may miss obfuscated or encoded PII forms"
+  ],
+  "overall_rcea": 0.8725,
+  "passport_id": "passport-c06234162581dd8f",
+  "passport_version": "va54aafbb664959e5",
+  "rcea_scores": {
+    "audit_traceability": 1.0,
+    "decision_actionability": 1.0,
+    "epistemic_warrant": 0.65,
+    "interpretive_fit": 0.5,
+    "limitation_propagation": 1.0,
+    "material_relevance": 1.0,
+    "normative_alignment": 1.0,
+    "overall": 0.8725
+  },
+  "regulatory_or_policy_references": [
+    "EU AI Act Annex III employment/recruitment",
+    "GDPR Art. 22",
+    "GDPR Art. 35"
+  ],
+  "role_id": "dpo",
+  "summary": "Finding: pii_entity_count=14 (threshold: 0). Severity: high. Recommended action: suspend_processing for role dpo.",
+  "suppressed_fields": [
+    "context_tags",
+    "method",
+    "provenance_hash"
+  ],
+  "suppression_log": [
+    {
+      "field": "context_tags",
+      "rationale": "Internal tagging metadata not relevant to legal determination.",
+      "retrievable": true,
+      "role_id": "dpo",
+      "rule_id": "rule-priv-dpo-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "method",
+      "rationale": "Methodological detail deferred to AI Lead review.",
+      "retrievable": true,
+      "role_id": "dpo",
+      "rule_id": "rule-priv-dpo-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "provenance_hash",
+      "rationale": "Technical hash not actionable for legal review.",
+      "retrievable": true,
+      "role_id": "dpo",
+      "rule_id": "rule-priv-dpo-001",
+      "rule_version": "1.0.0"
+    }
+  ],
+  "uncertainty_statement": "Medium uncertainty; interpret with caution.",
+  "visible_fields": {
+    "evidence_level": "tested",
+    "limitations": [
+      "Validated only for English and French; other languages may have undetected PII",
+      "NER model may miss obfuscated or encoded PII forms"
+    ],
+    "metric": "pii_entity_count",
+    "regulatory_mapping": [
+      "GDPR Art. 22",
+      "GDPR Art. 35",
+      "EU AI Act Annex III employment/recruitment"
+    ],
+    "severity": "high",
+    "threshold": 0,
+    "uncertainty": "medium",
+    "value": 14
+  }
+}

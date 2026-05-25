@@ -1,0 +1,48 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install package with dev extras
+        run: pip install -e ".[dev]"
+
+      - name: Run tests
+        run: pytest tests/ -v
+
+      - name: Generate privacy_recruitment DPO passport
+        run: |
+          python scripts/generate_passport.py \
+            --example privacy_recruitment \
+            --role dpo \
+            --out examples/privacy_recruitment/outputs/dpo_passport.json \
+            --markdown examples/privacy_recruitment/outputs/dpo_passport.md
+
+      - name: Compute RCEA scores
+        run: python scripts/compute_rcea.py --example privacy_recruitment --role dpo
+
+      - name: Validate passport
+        run: |
+          python scripts/validate_passport.py \
+            examples/privacy_recruitment/outputs/dpo_passport.json \
+            --example privacy_recruitment \
+            --role dpo
+
+      - name: Reproduce paper tables
+        run: python scripts/reproduce_paper_tables.py
+
+      - name: Reproduce paper figures
+        run: python scripts/reproduce_paper_figures.py

@@ -1,0 +1,220 @@
+{
+  "action_label": "require_retraining",
+  "claims": [
+    {
+      "claim_id": "claim-03e5c34c1bbe236f",
+      "text": "Field 'evidence_level' has value 'tested' (sourced from finding find-robust-001 via rule rule-robust-ai-lead-001).",
+      "trace": {
+        "applied_rule_id": "rule-robust-ai-lead-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-03e5c34c1bbe236f",
+        "context_pack_id": "ctx-health-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v47922cce2e0b202b",
+        "role_id": "ai_lead",
+        "source_finding_id": "find-robust-001",
+        "source_hash": "b7e2f4a1c9d3e5f6",
+        "source_method": "projected-gradient adversarial evaluation",
+        "source_timestamp": "2025-04-01T08:00:00Z"
+      },
+      "visible_fields_used": [
+        "evidence_level"
+      ]
+    },
+    {
+      "claim_id": "claim-b73d85303a9e1c16",
+      "text": "Field 'limitations' has value ['Evaluated only on synthetic test split; real-world adversarial distribution unknown', 'PGD attack budget may not reflect operational threat model'] (sourced from finding find-robust-001 via rule rule-robust-ai-lead-001).",
+      "trace": {
+        "applied_rule_id": "rule-robust-ai-lead-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-b73d85303a9e1c16",
+        "context_pack_id": "ctx-health-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v47922cce2e0b202b",
+        "role_id": "ai_lead",
+        "source_finding_id": "find-robust-001",
+        "source_hash": "b7e2f4a1c9d3e5f6",
+        "source_method": "projected-gradient adversarial evaluation",
+        "source_timestamp": "2025-04-01T08:00:00Z"
+      },
+      "visible_fields_used": [
+        "limitations"
+      ]
+    },
+    {
+      "claim_id": "claim-f2502984039e1a98",
+      "text": "Field 'method' has value 'projected-gradient adversarial evaluation' (sourced from finding find-robust-001 via rule rule-robust-ai-lead-001).",
+      "trace": {
+        "applied_rule_id": "rule-robust-ai-lead-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-f2502984039e1a98",
+        "context_pack_id": "ctx-health-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v47922cce2e0b202b",
+        "role_id": "ai_lead",
+        "source_finding_id": "find-robust-001",
+        "source_hash": "b7e2f4a1c9d3e5f6",
+        "source_method": "projected-gradient adversarial evaluation",
+        "source_timestamp": "2025-04-01T08:00:00Z"
+      },
+      "visible_fields_used": [
+        "method"
+      ]
+    },
+    {
+      "claim_id": "claim-3e18cf2776391006",
+      "text": "Field 'metric' has value 'adversarial_accuracy_drop' (sourced from finding find-robust-001 via rule rule-robust-ai-lead-001).",
+      "trace": {
+        "applied_rule_id": "rule-robust-ai-lead-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-3e18cf2776391006",
+        "context_pack_id": "ctx-health-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v47922cce2e0b202b",
+        "role_id": "ai_lead",
+        "source_finding_id": "find-robust-001",
+        "source_hash": "b7e2f4a1c9d3e5f6",
+        "source_method": "projected-gradient adversarial evaluation",
+        "source_timestamp": "2025-04-01T08:00:00Z"
+      },
+      "visible_fields_used": [
+        "metric"
+      ]
+    },
+    {
+      "claim_id": "claim-16e5c22dff010471",
+      "text": "Field 'threshold' has value 0.05 (sourced from finding find-robust-001 via rule rule-robust-ai-lead-001).",
+      "trace": {
+        "applied_rule_id": "rule-robust-ai-lead-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-16e5c22dff010471",
+        "context_pack_id": "ctx-health-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v47922cce2e0b202b",
+        "role_id": "ai_lead",
+        "source_finding_id": "find-robust-001",
+        "source_hash": "b7e2f4a1c9d3e5f6",
+        "source_method": "projected-gradient adversarial evaluation",
+        "source_timestamp": "2025-04-01T08:00:00Z"
+      },
+      "visible_fields_used": [
+        "threshold"
+      ]
+    },
+    {
+      "claim_id": "claim-51104ba8c8dadcb4",
+      "text": "Field 'uncertainty' has value 'medium' (sourced from finding find-robust-001 via rule rule-robust-ai-lead-001).",
+      "trace": {
+        "applied_rule_id": "rule-robust-ai-lead-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-51104ba8c8dadcb4",
+        "context_pack_id": "ctx-health-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v47922cce2e0b202b",
+        "role_id": "ai_lead",
+        "source_finding_id": "find-robust-001",
+        "source_hash": "b7e2f4a1c9d3e5f6",
+        "source_method": "projected-gradient adversarial evaluation",
+        "source_timestamp": "2025-04-01T08:00:00Z"
+      },
+      "visible_fields_used": [
+        "uncertainty"
+      ]
+    },
+    {
+      "claim_id": "claim-eb6df9e30061c8f5",
+      "text": "Field 'value' has value 0.28 (sourced from finding find-robust-001 via rule rule-robust-ai-lead-001).",
+      "trace": {
+        "applied_rule_id": "rule-robust-ai-lead-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-eb6df9e30061c8f5",
+        "context_pack_id": "ctx-health-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v47922cce2e0b202b",
+        "role_id": "ai_lead",
+        "source_finding_id": "find-robust-001",
+        "source_hash": "b7e2f4a1c9d3e5f6",
+        "source_method": "projected-gradient adversarial evaluation",
+        "source_timestamp": "2025-04-01T08:00:00Z"
+      },
+      "visible_fields_used": [
+        "value"
+      ]
+    }
+  ],
+  "decision_relevance": "This passport supports the 'require_retraining' decision for role 'ai_lead'. Confidence: 0.90.",
+  "expires_at": null,
+  "headline": "[HIGH] Robustness finding \u2014 require_retraining (role: ai_lead)",
+  "limitations": [
+    "Evaluated only on synthetic test split; real-world adversarial distribution unknown",
+    "PGD attack budget may not reflect operational threat model"
+  ],
+  "overall_rcea": 0.9027777777777778,
+  "passport_id": "passport-1d663b5fa81f5e42",
+  "passport_version": "v47922cce2e0b202b",
+  "rcea_scores": {
+    "audit_traceability": 1.0,
+    "decision_actionability": 1.0,
+    "epistemic_warrant": 0.65,
+    "interpretive_fit": 1.0,
+    "limitation_propagation": 1.0,
+    "material_relevance": 1.0,
+    "overall": 0.9027777777777778
+  },
+  "regulatory_or_policy_references": [],
+  "role_id": "ai_lead",
+  "summary": "Robustness degradation: adversarial_accuracy_drop=0.28 (threshold: 0.05) via projected-gradient adversarial evaluation. Uncertainty: medium. Action: require_retraining.",
+  "suppressed_fields": [
+    "context_tags",
+    "provenance_hash",
+    "regulatory_mapping",
+    "severity"
+  ],
+  "suppression_log": [
+    {
+      "field": "context_tags",
+      "rationale": "Internal classification.",
+      "retrievable": true,
+      "role_id": "ai_lead",
+      "rule_id": "rule-robust-ai-lead-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "provenance_hash",
+      "rationale": "Audit hash only.",
+      "retrievable": true,
+      "role_id": "ai_lead",
+      "rule_id": "rule-robust-ai-lead-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "regulatory_mapping",
+      "rationale": "Regulatory detail deferred to compliance.",
+      "retrievable": true,
+      "role_id": "ai_lead",
+      "rule_id": "rule-robust-ai-lead-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "severity",
+      "rationale": "Suppressed to encourage metric-based assessment.",
+      "retrievable": true,
+      "role_id": "ai_lead",
+      "rule_id": "rule-robust-ai-lead-001",
+      "rule_version": "1.0.0"
+    }
+  ],
+  "uncertainty_statement": "Medium uncertainty; interpret with caution.",
+  "visible_fields": {
+    "evidence_level": "tested",
+    "limitations": [
+      "Evaluated only on synthetic test split; real-world adversarial distribution unknown",
+      "PGD attack budget may not reflect operational threat model"
+    ],
+    "method": "projected-gradient adversarial evaluation",
+    "metric": "adversarial_accuracy_drop",
+    "threshold": 0.05,
+    "uncertainty": "medium",
+    "value": 0.28
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EvidenceFinding",
+  "type": "object",
+  "required": [
+    "finding_id", "finding_family", "metric", "value", "severity",
+    "method", "uncertainty", "limitations", "regulatory_mapping",
+    "context_tags", "provenance_hash", "timestamp", "evidence_level"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "finding_id": { "type": "string" },
+    "finding_family": {
+      "type": "string",
+      "enum": ["privacy", "fairness", "robustness", "security", "explainability", "documentation", "governance", "supplier"]
+    },
+    "metric": { "type": "string" },
+    "value": {},
+    "threshold": {},
+    "severity": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "critical"]
+    },
+    "method": { "type": "string" },
+    "uncertainty": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "unknown"]
+    },
+    "limitations": { "type": "array", "items": { "type": "string" } },
+    "regulatory_mapping": { "type": "array", "items": { "type": "string" } },
+    "context_tags": { "type": "array", "items": { "type": "string" } },
+    "provenance_hash": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "evidence_level": {
+      "type": "string",
+      "enum": ["assertion", "documented", "tested", "independently_verified"]
+    }
+  }
+}

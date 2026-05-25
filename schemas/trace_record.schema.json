@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TraceRecord",
+  "type": "object",
+  "required": [
+    "claim_id", "source_finding_id", "source_hash", "source_method",
+    "source_timestamp", "applied_rule_id", "applied_rule_version",
+    "context_pack_id", "context_pack_version", "role_id", "passport_version"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "claim_id": { "type": "string" },
+    "source_finding_id": { "type": "string" },
+    "source_hash": { "type": "string" },
+    "source_method": { "type": "string" },
+    "source_timestamp": { "type": "string" },
+    "applied_rule_id": { "type": "string" },
+    "applied_rule_version": { "type": "string" },
+    "context_pack_id": { "type": "string" },
+    "context_pack_version": { "type": "string" },
+    "role_id": { "type": "string" },
+    "passport_version": { "type": "string" }
+  }
+}

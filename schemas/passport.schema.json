@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EvidencePassport",
+  "type": "object",
+  "required": [
+    "passport_id", "passport_version", "role_id", "action_label",
+    "headline", "summary", "decision_relevance", "visible_fields",
+    "suppressed_fields", "suppression_log", "limitations",
+    "uncertainty_statement", "regulatory_or_policy_references",
+    "claims", "rcea_scores", "overall_rcea"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "passport_id": { "type": "string" },
+    "passport_version": { "type": "string" },
+    "role_id": { "type": "string" },
+    "action_label": { "type": "string" },
+    "headline": { "type": "string" },
+    "summary": { "type": "string" },
+    "decision_relevance": { "type": "string" },
+    "visible_fields": { "type": "object" },
+    "suppressed_fields": { "type": "array", "items": { "type": "string" } },
+    "suppression_log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["field", "role_id", "rule_id", "rule_version", "rationale", "retrievable"],
+        "additionalProperties": false,
+        "properties": {
+          "field": { "type": "string" },
+          "role_id": { "type": "string" },
+          "rule_id": { "type": "string" },
+          "rule_version": { "type": "string" },
+          "rationale": { "type": "string" },
+          "retrievable": { "type": "boolean" }
+        }
+      }
+    },
+    "limitations": { "type": "array", "items": { "type": "string" } },
+    "uncertainty_statement": { "type": "string" },
+    "regulatory_or_policy_references": { "type": "array", "items": { "type": "string" } },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim_id", "text", "visible_fields_used", "trace"],
+        "additionalProperties": false,
+        "properties": {
+          "claim_id": { "type": "string" },
+          "text": { "type": "string" },
+          "visible_fields_used": { "type": "array", "items": { "type": "string" } },
+          "trace": {
+            "type": "object",
+            "required": [
+              "claim_id", "source_finding_id", "source_hash", "source_method",
+              "source_timestamp", "applied_rule_id", "applied_rule_version",
+              "context_pack_id", "context_pack_version", "role_id", "passport_version"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "claim_id": { "type": "string" },
+              "source_finding_id": { "type": "string" },
+              "source_hash": { "type": "string" },
+              "source_method": { "type": "string" },
+              "source_timestamp": { "type": "string" },
+              "applied_rule_id": { "type": "string" },
+              "applied_rule_version": { "type": "string" },
+              "context_pack_id": { "type": "string" },
+              "context_pack_version": { "type": "string" },
+              "role_id": { "type": "string" },
+              "passport_version": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "rcea_scores": {
+      "type": "object",
+      "additionalProperties": { "type": "number" }
+    },
+    "overall_rcea": { "type": "number" },
+    "expires_at": { "type": ["string", "null"] }
+  }
+}

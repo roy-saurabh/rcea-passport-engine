@@ -1,0 +1,180 @@
+{
+  "action_label": "halt_programme",
+  "claims": [
+    {
+      "claim_id": "claim-f274ff111cfe6304",
+      "text": "Field 'context_tags' has value ['credit', 'lending', 'fairness', 'high-risk'] (sourced from finding find-fairness-001 via rule rule-fair-exec-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-exec-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-f274ff111cfe6304",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "vdb196fa76106ac72",
+        "role_id": "executive",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "context_tags"
+      ]
+    },
+    {
+      "claim_id": "claim-7919c51fec6122f5",
+      "text": "Field 'finding_family' has value 'fairness' (sourced from finding find-fairness-001 via rule rule-fair-exec-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-exec-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-7919c51fec6122f5",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "vdb196fa76106ac72",
+        "role_id": "executive",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "finding_family"
+      ]
+    },
+    {
+      "claim_id": "claim-e8ee549486c1aadd",
+      "text": "Field 'severity' has value 'high' (sourced from finding find-fairness-001 via rule rule-fair-exec-001).",
+      "trace": {
+        "applied_rule_id": "rule-fair-exec-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-e8ee549486c1aadd",
+        "context_pack_id": "ctx-credit-001",
+        "context_pack_version": "1.0",
+        "passport_version": "vdb196fa76106ac72",
+        "role_id": "executive",
+        "source_finding_id": "find-fairness-001",
+        "source_hash": "d8e9f0a1b2c3d4e5",
+        "source_method": "Demographic parity difference computed on held-out test set",
+        "source_timestamp": "2025-05-10T11:00:00Z"
+      },
+      "visible_fields_used": [
+        "severity"
+      ]
+    }
+  ],
+  "decision_relevance": "This passport supports the 'halt_programme' decision for role 'executive'. Confidence: 0.81.",
+  "expires_at": null,
+  "headline": "[HIGH] Fairness finding \u2014 halt_programme (role: executive)",
+  "limitations": [],
+  "overall_rcea": 0.8125,
+  "passport_id": "passport-0b4a761ff8c38a57",
+  "passport_version": "vdb196fa76106ac72",
+  "rcea_scores": {
+    "audit_traceability": 1.0,
+    "decision_actionability": 1.0,
+    "epistemic_warrant": 0.5,
+    "interpretive_fit": 1.0,
+    "limitation_propagation": 0.0,
+    "material_relevance": 1.0,
+    "overall": 0.8125
+  },
+  "regulatory_or_policy_references": [],
+  "role_id": "executive",
+  "summary": "A high fairness finding requires executive review. Action: halt_programme.",
+  "suppressed_fields": [
+    "evidence_level",
+    "limitations",
+    "method",
+    "metric",
+    "provenance_hash",
+    "regulatory_mapping",
+    "threshold",
+    "uncertainty",
+    "value"
+  ],
+  "suppression_log": [
+    {
+      "field": "evidence_level",
+      "rationale": "Evidence grading suppressed.",
+      "retrievable": true,
+      "role_id": "executive",
+      "rule_id": "rule-fair-exec-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "limitations",
+      "rationale": "Limitations deferred.",
+      "retrievable": true,
+      "role_id": "executive",
+      "rule_id": "rule-fair-exec-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "method",
+      "rationale": "Methodology suppressed.",
+      "retrievable": true,
+      "role_id": "executive",
+      "rule_id": "rule-fair-exec-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "metric",
+      "rationale": "Technical metric suppressed.",
+      "retrievable": true,
+      "role_id": "executive",
+      "rule_id": "rule-fair-exec-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "provenance_hash",
+      "rationale": "Hash suppressed.",
+      "retrievable": true,
+      "role_id": "executive",
+      "rule_id": "rule-fair-exec-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "regulatory_mapping",
+      "rationale": "Regulatory detail deferred.",
+      "retrievable": true,
+      "role_id": "executive",
+      "rule_id": "rule-fair-exec-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "threshold",
+      "rationale": "Technical threshold suppressed.",
+      "retrievable": true,
+      "role_id": "executive",
+      "rule_id": "rule-fair-exec-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "uncertainty",
+      "rationale": "Uncertainty suppressed.",
+      "retrievable": true,
+      "role_id": "executive",
+      "rule_id": "rule-fair-exec-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "value",
+      "rationale": "Raw value suppressed.",
+      "retrievable": true,
+      "role_id": "executive",
+      "rule_id": "rule-fair-exec-001",
+      "rule_version": "1.0.0"
+    }
+  ],
+  "uncertainty_statement": "High uncertainty; treat findings as indicative only.",
+  "visible_fields": {
+    "context_tags": [
+      "credit",
+      "lending",
+      "fairness",
+      "high-risk"
+    ],
+    "finding_family": "fairness",
+    "severity": "high"
+  }
+}

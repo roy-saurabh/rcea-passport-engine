@@ -1,0 +1,59 @@
+[
+  {
+    "role_id": "dpo",
+    "role_name": "dpo",
+    "authority": ["issue_stop_processing_order", "request_dpia", "escalate_to_supervisory_authority"],
+    "liability": ["GDPR_compliance", "data_subject_rights"],
+    "expertise_level": "legal",
+    "admissible_actions": ["suspend_processing", "require_dpia", "issue_remediation_order", "escalate"],
+    "acceptable_abstraction_levels": ["legal", "mixed"],
+    "evidence_needs": ["regulatory_mapping", "severity", "limitations", "metric", "value", "threshold"],
+    "weights": {
+      "material_relevance": 0.2,
+      "epistemic_warrant": 0.15,
+      "normative_alignment": 0.25,
+      "interpretive_fit": 0.15,
+      "decision_actionability": 0.1,
+      "limitation_propagation": 0.1,
+      "audit_traceability": 0.05
+    }
+  },
+  {
+    "role_id": "ai_lead",
+    "role_name": "ai_lead",
+    "authority": ["approve_model_changes", "commission_audit", "adjust_thresholds"],
+    "liability": ["model_performance", "technical_compliance"],
+    "expertise_level": "technical",
+    "admissible_actions": ["commission_audit", "adjust_thresholds", "require_retraining", "flag_for_review"],
+    "acceptable_abstraction_levels": ["technical", "mixed"],
+    "evidence_needs": ["metric", "value", "threshold", "method", "uncertainty", "limitations"],
+    "weights": {
+      "material_relevance": 0.2,
+      "epistemic_warrant": 0.25,
+      "normative_alignment": 0.1,
+      "interpretive_fit": 0.15,
+      "decision_actionability": 0.15,
+      "limitation_propagation": 0.1,
+      "audit_traceability": 0.05
+    }
+  },
+  {
+    "role_id": "executive",
+    "role_name": "executive",
+    "authority": ["approve_deployment", "halt_programme", "allocate_remediation_budget"],
+    "liability": ["organisational_risk", "regulatory_exposure"],
+    "expertise_level": "executive",
+    "admissible_actions": ["approve_deployment", "halt_programme", "require_board_briefing", "escalate"],
+    "acceptable_abstraction_levels": ["nontechnical", "mixed"],
+    "evidence_needs": ["severity", "regulatory_mapping", "context_tags"],
+    "weights": {
+      "material_relevance": 0.15,
+      "epistemic_warrant": 0.1,
+      "normative_alignment": 0.2,
+      "interpretive_fit": 0.2,
+      "decision_actionability": 0.2,
+      "limitation_propagation": 0.1,
+      "audit_traceability": 0.05
+    }
+  }
+]

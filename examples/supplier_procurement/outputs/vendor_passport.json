@@ -1,0 +1,189 @@
+{
+  "action_label": "provide_attestation",
+  "claims": [
+    {
+      "claim_id": "claim-80b677230ee8fe12",
+      "text": "Field 'limitations' has value ['Gap analysis based on self-reported attestation index; completeness not independently verified'] (sourced from finding find-supplier-001 via rule rule-supplier-vendor-001).",
+      "trace": {
+        "applied_rule_id": "rule-supplier-vendor-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-80b677230ee8fe12",
+        "context_pack_id": "ctx-proc-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v388f57b6f88d373d",
+        "role_id": "vendor",
+        "source_finding_id": "find-supplier-001",
+        "source_hash": "c4d5e6f7a8b9c0d1",
+        "source_method": "Supplier attestation gap analysis",
+        "source_timestamp": "2025-05-01T14:00:00Z"
+      },
+      "visible_fields_used": [
+        "limitations"
+      ]
+    },
+    {
+      "claim_id": "claim-e2bfec4ec77fa615",
+      "text": "Field 'method' has value 'Supplier attestation gap analysis' (sourced from finding find-supplier-001 via rule rule-supplier-vendor-001).",
+      "trace": {
+        "applied_rule_id": "rule-supplier-vendor-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-e2bfec4ec77fa615",
+        "context_pack_id": "ctx-proc-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v388f57b6f88d373d",
+        "role_id": "vendor",
+        "source_finding_id": "find-supplier-001",
+        "source_hash": "c4d5e6f7a8b9c0d1",
+        "source_method": "Supplier attestation gap analysis",
+        "source_timestamp": "2025-05-01T14:00:00Z"
+      },
+      "visible_fields_used": [
+        "method"
+      ]
+    },
+    {
+      "claim_id": "claim-036ddcc34d5de9e9",
+      "text": "Field 'metric' has value 'missing_supplier_attestations' (sourced from finding find-supplier-001 via rule rule-supplier-vendor-001).",
+      "trace": {
+        "applied_rule_id": "rule-supplier-vendor-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-036ddcc34d5de9e9",
+        "context_pack_id": "ctx-proc-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v388f57b6f88d373d",
+        "role_id": "vendor",
+        "source_finding_id": "find-supplier-001",
+        "source_hash": "c4d5e6f7a8b9c0d1",
+        "source_method": "Supplier attestation gap analysis",
+        "source_timestamp": "2025-05-01T14:00:00Z"
+      },
+      "visible_fields_used": [
+        "metric"
+      ]
+    },
+    {
+      "claim_id": "claim-320725da45c5df58",
+      "text": "Field 'severity' has value 'high' (sourced from finding find-supplier-001 via rule rule-supplier-vendor-001).",
+      "trace": {
+        "applied_rule_id": "rule-supplier-vendor-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-320725da45c5df58",
+        "context_pack_id": "ctx-proc-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v388f57b6f88d373d",
+        "role_id": "vendor",
+        "source_finding_id": "find-supplier-001",
+        "source_hash": "c4d5e6f7a8b9c0d1",
+        "source_method": "Supplier attestation gap analysis",
+        "source_timestamp": "2025-05-01T14:00:00Z"
+      },
+      "visible_fields_used": [
+        "severity"
+      ]
+    },
+    {
+      "claim_id": "claim-ad80f8a9a79df676",
+      "text": "Field 'value' has value ['data retention policy', 'subprocessor list', 'model update log'] (sourced from finding find-supplier-001 via rule rule-supplier-vendor-001).",
+      "trace": {
+        "applied_rule_id": "rule-supplier-vendor-001",
+        "applied_rule_version": "1.0.0",
+        "claim_id": "claim-ad80f8a9a79df676",
+        "context_pack_id": "ctx-proc-001",
+        "context_pack_version": "1.0",
+        "passport_version": "v388f57b6f88d373d",
+        "role_id": "vendor",
+        "source_finding_id": "find-supplier-001",
+        "source_hash": "c4d5e6f7a8b9c0d1",
+        "source_method": "Supplier attestation gap analysis",
+        "source_timestamp": "2025-05-01T14:00:00Z"
+      },
+      "visible_fields_used": [
+        "value"
+      ]
+    }
+  ],
+  "decision_relevance": "This passport supports the 'provide_attestation' decision for role 'vendor'. Confidence: 0.89.",
+  "expires_at": null,
+  "headline": "[HIGH] Supplier finding \u2014 provide_attestation (role: vendor)",
+  "limitations": [
+    "Gap analysis based on self-reported attestation index; completeness not independently verified"
+  ],
+  "overall_rcea": 0.888888888888889,
+  "passport_id": "passport-fd9d6a0429f4e40e",
+  "passport_version": "v388f57b6f88d373d",
+  "rcea_scores": {
+    "audit_traceability": 1.0,
+    "decision_actionability": 1.0,
+    "epistemic_warrant": 0.5,
+    "interpretive_fit": 1.0,
+    "limitation_propagation": 1.0,
+    "material_relevance": 1.0,
+    "overall": 0.888888888888889
+  },
+  "regulatory_or_policy_references": [],
+  "role_id": "vendor",
+  "summary": "Missing attestations identified via Supplier attestation gap analysis: ['data retention policy', 'subprocessor list', 'model update log']. Please provide the missing documents. Action: provide_attestation.",
+  "suppressed_fields": [
+    "context_tags",
+    "evidence_level",
+    "provenance_hash",
+    "regulatory_mapping",
+    "threshold"
+  ],
+  "suppression_log": [
+    {
+      "field": "context_tags",
+      "rationale": "Internal tags suppressed.",
+      "retrievable": true,
+      "role_id": "vendor",
+      "rule_id": "rule-supplier-vendor-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "evidence_level",
+      "rationale": "Internal grading.",
+      "retrievable": true,
+      "role_id": "vendor",
+      "rule_id": "rule-supplier-vendor-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "provenance_hash",
+      "rationale": "Hash internal.",
+      "retrievable": true,
+      "role_id": "vendor",
+      "rule_id": "rule-supplier-vendor-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "regulatory_mapping",
+      "rationale": "Regulatory interpretation deferred to procurement team.",
+      "retrievable": true,
+      "role_id": "vendor",
+      "rule_id": "rule-supplier-vendor-001",
+      "rule_version": "1.0.0"
+    },
+    {
+      "field": "threshold",
+      "rationale": "No numeric threshold applicable.",
+      "retrievable": true,
+      "role_id": "vendor",
+      "rule_id": "rule-supplier-vendor-001",
+      "rule_version": "1.0.0"
+    }
+  ],
+  "uncertainty_statement": "Low uncertainty; findings are well-supported.",
+  "visible_fields": {
+    "limitations": [
+      "Gap analysis based on self-reported attestation index; completeness not independently verified"
+    ],
+    "method": "Supplier attestation gap analysis",
+    "metric": "missing_supplier_attestations",
+    "severity": "high",
+    "value": [
+      "data retention policy",
+      "subprocessor list",
+      "model update log"
+    ]
+  }
+}

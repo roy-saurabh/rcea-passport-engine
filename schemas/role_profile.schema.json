@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RoleProfile",
+  "type": "object",
+  "required": [
+    "role_id", "role_name", "authority", "liability", "expertise_level",
+    "admissible_actions", "acceptable_abstraction_levels", "evidence_needs", "weights"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "role_id": { "type": "string" },
+    "role_name": {
+      "type": "string",
+      "enum": ["dpo", "ciso", "ai_lead", "procurement", "executive", "vendor", "platform_admin"]
+    },
+    "authority": { "type": "array", "items": { "type": "string" } },
+    "liability": { "type": "array", "items": { "type": "string" } },
+    "expertise_level": {
+      "type": "string",
+      "enum": ["nontechnical", "mixed", "technical", "legal", "security", "executive"]
+    },
+    "admissible_actions": { "type": "array", "items": { "type": "string" } },
+    "acceptable_abstraction_levels": { "type": "array", "items": { "type": "string" } },
+    "evidence_needs": { "type": "array", "items": { "type": "string" } },
+    "weights": {
+      "type": "object",
+      "additionalProperties": { "type": "number" }
+    }
+  }
+}
