@@ -2,7 +2,7 @@
 
 [![Tests](https://github.com/roy-saurabh/rcea-passport-engine/actions/workflows/tests.yml/badge.svg)](https://github.com/roy-saurabh/rcea-passport-engine/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20384670.svg)](https://doi.org/10.5281/zenodo.20384670)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20387956.svg)](https://doi.org/10.5281/zenodo.20387956)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/downloads/)
 
 **Manuscript:** Role-Conditioned Evidentiary Adequacy for AI Governance: A Computable Framework, Evidence Passport Architecture, and Reference Implementation.
@@ -204,7 +204,7 @@ If you use this software or the RCEA framework, please cite:
   author  = {Saurabh, Roy},
   year    = {2026},
   version = {0.1.1},
-  doi     = {10.5281/zenodo.20384670},
+  doi     = {10.5281/zenodo.20387956},
   url     = {https://github.com/roy-saurabh/rcea-passport-engine}
 }
 ```
